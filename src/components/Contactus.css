@@ -1,0 +1,50 @@
+.contactus {
+    align-items: right;
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .contactus h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #555;
+  }
+  

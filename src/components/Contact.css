@@ -1,0 +1,128 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Add space between sections */
+  padding: 40px;
+  height: 100vh;
+  background-color: #f9f9f9; /* Light background for better readability */
+}
+
+/* Contact Information Section */
+.contact .contact-info {
+  flex: 1;
+  padding: 20px;
+  background-color: white; /* White card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a card effect */
+}
+
+.contact .contact-info h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #ddd; /* Thin underline for the title */
+  padding-bottom: 5px;
+}
+
+.contact .contact-info p {
+  font-size: 18px;
+  line-height: 1.6; /* Improve readability */
+  margin: 15px 0;
+  color: #555;
+}
+
+/* Contact Form Section */
+.contact .contact-form {
+  flex: 1;
+  padding: 20px;
+  background-color: white; /* White card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a card effect */
+}
+
+.contact .contact-form h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #333;
+  border-bottom: 2px solid #ddd; /* Thin underline for the title */
+  padding-bottom: 5px;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  width: 100%; /* Full width inputs and textarea */
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9; /* Subtle background for inputs */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .contact-form input:focus,
+.contact .contact-form textarea:focus {
+  border-color: #333;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Highlighted border on focus */
+  outline: none;
+}
+
+.contact .contact-form button {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact .contact-form button:hover {
+  background-color: #555;
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Google Maps Section */
+.contact .google-maps {
+  height: 70vh;
+  width: auto;
+  flex: 1;  
+  border-radius: 10px;
+  overflow: hidden; /* Ensure smooth edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Card shadow effect */
+}
+
+.contact .google-maps iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Remove iframe border */
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: stretch;
+    gap: 20px; /* Maintain spacing */
+    height: auto; /* Remove fixed height */
+  }
+
+  .contact .contact-info,
+  .contact .contact-form,
+  .contact .google-maps {
+    width: 100%; /* Full width for all sections */
+    margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .contact .google-maps iframe {
+    height: 300px; /* Adjust map height for smaller screens */
+  }
+
+  .contact .contact-form button {
+    width: 100%; /* Full width for button */
+  }
+}

@@ -1,0 +1,43 @@
+.home{
+    padding: 80px 20px;
+    text-align: left;
+    background-image: url('../components/law-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: bottom;
+
+}
+
+.home h2{
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 10px;
+
+
+}
+
+
+@media (max-width: 768px){
+    .home h2 {
+        font-size: 1.5rem;
+    }
+    .home{
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width:1200px){
+    .home {
+        padding: 100px 60px;
+    }
+    .home h2{
+        font-size: 1.5rem;
+        margin-right: 240px;
+    }
+
+}

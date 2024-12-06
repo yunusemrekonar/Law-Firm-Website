@@ -1,0 +1,84 @@
+.services {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+    height: 150vh;
+  }
+  
+  .services h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+  .services h3 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+  }
+  .services p{
+    padding-top: 5px;
+    text-align: justify;
+    letter-spacing: normal; 
+  }
+  .services ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  .services li {
+    background-color: #f9f9f9;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: 300px;
+    min-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .services li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* For tablet and larger devices (min-width: 769px) */
+  @media (min-width: 769px) {
+    .services ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .services li {
+      width: 250px;
+    }
+  }
+  
+  /* For larger devices (min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .services li {
+      max-width: 350px;
+    }
+  }
+  
+  /* For mobile view (max-width: 768px) */
+  @media (max-width: 768px) {
+    .services ul {
+      flex-direction: column; /* Stack items vertically */
+      gap: 20px;
+    }
+  
+    .services li {
+      width: 100%; /* Make each item take full width */
+      max-width: 100%; /* Ensure no max-width limit */
+      min-width: 100%; /* Prevent items from being too narrow */
+      padding: 20px; /* Adjust padding for mobile */
+    }
+  
+    .services h2 {
+      font-size: 1.5rem; /* Reduce heading size for mobile */
+    }
+  }
+  
