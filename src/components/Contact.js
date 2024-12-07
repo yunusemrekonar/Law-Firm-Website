@@ -7,9 +7,9 @@ const Contact = () => {
       
       <div className="contact-info">
         <h2>İletişim Bilgileri</h2>
-        <p>Adres: Örnek adres, İstanbul, Türkiye</p>
-        <p>Telefon: (555) 123 45 67</p>
-        <p>E-Posta: info@example.com</p>
+        <p>Adres: Kocatepe Mah. Hatay Sk. Tülta İş Hanı No:6/9 Çankaya - Ankara</p>
+        <p>Telefon: +90 (534) 828 38 06</p>
+        <p>E-Posta: konarhukuk@gmail.com</p>
       </div>
 
      

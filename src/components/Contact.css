@@ -90,6 +90,7 @@
 .contact .google-maps {
   height: 70vh;
   width: auto;
+  background-color: white;
   flex: 1;  
   border-radius: 10px;
   overflow: hidden; /* Ensure smooth edges */
