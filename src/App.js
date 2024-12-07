@@ -7,13 +7,17 @@ import Footer from './components/Footer';
 import Aboutus from './components/Aboutus';
 import Services from './components/Services';
 import { Helmet } from "react-helmet"; 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
     <div className="App">
       <Helmet>
+        <meta name="description" content="Ankara Konar Hukuk ve Danışmanlık olarak, hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlası için bize başvurun." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Konar Hukuk Sitesi</title>
+        <title>Ankara Konar Hukuk & Danışmanlık</title>
       </Helmet>
       <Navbar></Navbar>
       <Home></Home>

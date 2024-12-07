@@ -1,9 +1,9 @@
 .footer {
-    height: 3vh;
+    height: auto; /* Allow height to adapt based on content */
     padding: 20px 40px;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
     text-align: center;
     background-color: #111;
     color: #fff;
@@ -26,6 +26,7 @@
     color: #fff; /* Highlight links on hover */
 }
 
+/* Mobile View (max-width: 768px) */
 @media (max-width: 768px) {
     .footer {
         padding: 15px 20px; /* Adjust padding for smaller screens */
@@ -39,6 +40,7 @@
     }
 }
 
+/* Tablet View (max-width: 1200px) */
 @media (max-width: 1200px) {
     .footer {
         padding: 30px 60px; /* Scaled padding for medium screens */
@@ -46,5 +48,18 @@
 
     .footer p {
         font-size: 1rem; /* Maintain consistency across devices */
+    }
+}
+
+/* Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 15px; /* Adjust padding for very small screens */
+        font-size: 0.75rem; /* Smaller font size for very small screens */
+        text-align: center; /* Center the content */
+    }
+
+    .footer p {
+        font-size: 0.85rem; /* Adjust paragraph font size for very small screens */
     }
 }

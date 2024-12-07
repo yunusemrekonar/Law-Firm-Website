@@ -24,6 +24,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="logopart">
           <img src={logo} alt="Logo" className="navbar-logo" />
+          <p>Ankara Konar Hukuk ve Danışmanlık</p>
         </div>
 
         {/* Navigation Links */}

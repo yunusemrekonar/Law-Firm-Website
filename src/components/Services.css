@@ -1,73 +1,166 @@
 .services {
-  padding: 60px 20px;
-  background-color: white;
+  padding: 20px;
   text-align: center;
-}
-
-.services h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-}
-
-.services ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 kolonlu grid */
-  gap: 20px;
-  list-style: none;
-  font-family: 'Roboto', sans-serif;
-}
-
-.services li {
-  background-color: #f9f9f9;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.service-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  overflow: hidden;
+  justify-content: space-between;
 }
 
-.services li.active {
-  transform: scale(1.1);  /* Tıklanan öğeyi büyüt */
-  z-index: 10;           /* Büyüyen öğeyi diğer öğelerin önüne getir */
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .service-title {
-  font-size: 1.25rem;
-  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 15px;
 }
 
 .service-description {
-  display: none;
-  font-family: 'Roboto', sans-serif;
-  text-align: justify;
-  font-size: 14px;
-  opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #555;
 }
 
-.services li.active .service-description {
+/* Slick Navigation Arrows */
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Opacity white background */
+  border: 2px solid #000;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 2px;
+}
+
+.slick-next {
+  right: 2px;
+}
+
+.slick-prev:before, .slick-next:before {
+  content: '';
   display: block;
-  opacity: 1;
-  transform: scale(1);
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
 }
 
+.slick-prev:before {
+  transform: rotate(-45deg);
+}
+
+.slick-next:before {
+  transform: rotate(45deg);
+}
+
+.slick-prev:after, .slick-next:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+}
+
+.slick-prev:after {
+  transform: rotate(45deg);
+}
+
+.slick-next:after {
+  transform: rotate(-45deg);
+}
+
+/* For medium screens (max-width: 1024px) */
 @media (max-width: 1024px) {
-  .services ul {
-    grid-template-columns: repeat(2, 1fr); /* Orta boyutlu ekranlar için 2 kolon */
+  .service-item {
+    height: 300px;
+  }
+
+  .service-title {
+    font-size: 1.25rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .slick-prev, .slick-next {
+    width: 35px;
+    height: 35px;
   }
 }
 
+/* For small screens (max-width: 768px) */
 @media (max-width: 768px) {
-  .services ul {
-    grid-template-columns: 1fr; /* Küçük ekranlar için 1 kolon */
+  .services {
+    padding: 15px;
+  }
+
+  .service-item {
+    height: 250px;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* For extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .service-item {
+    height: 220px;
+  }
+  .services h2{
+    font-size: 1.8vh;
+  }
+  .service-title {
+    font-size: 0.8rem;
+  }
+
+  .service-description {
+    font-size: 0.6rem;
+  }
+
+  .slick-prev, .slick-next {
+    width: 25px;
+    height: 25px;
   }
 }
