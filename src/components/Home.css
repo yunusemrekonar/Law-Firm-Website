@@ -1,4 +1,4 @@
-.home{
+.home {
     padding: 80px 20px;
     text-align: left;
     background-image: url('../components/law-background.jpg');
@@ -9,35 +9,43 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: bottom;
-
+    align-items: flex-start; /* align-items: bottom -> flex-start olarak düzeltildi */
 }
 
-.home h2{
-    font-family: 'Times New Roman', Times, serif ;
-    font-size: 10px;
-
-
+.home h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px; /* Başlangıç font boyutu çok küçük, daha uygun bir değer seçilmeli */
 }
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .home h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Mobil ekranlarda h2 font boyutu artırıldı */
     }
-    .home{
+
+    .home {
         background-size: cover;
         background-position: center;
+        padding: 60px 20px; /* Mobilde padding biraz azaltıldı */
     }
 }
 
-@media (min-width:1200px){
+@media (min-width: 1200px) {
     .home {
-        padding: 100px 60px;
-    }
-    .home h2{
-        font-size: 1.5rem;
-        margin-right: 240px;
+        padding: 100px 60px; /* Daha büyük ekranlar için padding artırıldı */
     }
 
+    .home h2 {
+        font-size: 2rem; /* 1200px ve üstü için daha büyük font boyutu */
+        margin-right: 240px; /* Sağ margin fazla yer kaplayabilir, bunu esnek hale getirebiliriz */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .home {
+        padding: 80px 40px; /* Orta boy ekranlar için padding ayarı */
+    }
+
+    .home h2 {
+        font-size: 1.8rem; /* Orta boy ekranlar için font boyutu */
+    }
 }

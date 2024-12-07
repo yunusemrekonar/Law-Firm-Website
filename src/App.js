@@ -6,10 +6,15 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Aboutus from './components/Aboutus';
 import Services from './components/Services';
+import { Helmet } from "react-helmet"; 
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Konar Hukuk Sitesi</title>
+      </Helmet>
       <Navbar></Navbar>
       <Home></Home>
       <Aboutus></Aboutus>

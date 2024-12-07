@@ -7,8 +7,8 @@
     text-align: center;
     background-color: #111;
     color: #fff;
-    font-size: 0.875rem; 
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 0.875rem;
+    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .footer p {
@@ -31,6 +31,11 @@
         padding: 15px 20px; /* Adjust padding for smaller screens */
         text-align: center;
         font-size: 0.8rem; /* Slightly smaller text for mobile */
+        height: auto; /* Allow height to adapt based on content */
+    }
+
+    .footer p {
+        font-size: 0.9rem; /* Adjust paragraph font size for mobile */
     }
 }
 

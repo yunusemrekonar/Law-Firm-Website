@@ -14,6 +14,7 @@
 
 .team-section {
   align-items: column;
+  align-items: center;
   flex: 1;
   background-color: #fff;
   padding: 20px;
@@ -38,7 +39,7 @@
 .team-member img {
   align-items: column;
   width: 20vh;
-  height: auto; 
+  height: auto;
   margin-right: 15px;
 }
 
@@ -76,8 +77,9 @@
 }
 
 /* Mobile View Styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .aboutus {
+    height: auto;
     padding: 20px;
   }
 
@@ -89,6 +91,7 @@
   .team-section {
     width: 100%;
     padding: 15px;
+    align-items: center;
   }
 
   .about-text {
@@ -98,11 +101,11 @@
 
   .team-member {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .team-member img {
-    height: 40px; 
+    height: auto; 
     margin-right: 0;
     margin-bottom: 10px;
   }
@@ -121,5 +124,55 @@
 
   .about-text p {
     font-size: 14px;
+  }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .aboutus {
+    padding: 15px;
+  }
+
+  .aboutus-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .team-section {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .team-member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .team-member img {
+    height: auto; 
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .team-member h3 {
+    font-size: 14px;
+  }
+
+  .team-member p {
+    font-size: 10px;
+  }
+
+  .about-text h2 {
+    font-size: 18px;
+  }
+
+  .about-text p {
+    font-size: 12px;
   }
 }
