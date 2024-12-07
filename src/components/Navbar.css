@@ -1,4 +1,4 @@
-/* Genel Stil */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +6,7 @@
   font-family: 'Roboto', sans-serif;
 }
 :target {
-  scroll-margin-top: 70px;
-}
-body {
-  min-height: 100vh;
-  background: url('law-background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  scroll-margin-top: 109px;
 }
 
 /* Navbar */
@@ -29,6 +20,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 15vh;
 }
 
 .navbar-container {
@@ -49,11 +41,7 @@ body {
   margin-right: 10px;
 }
 
-.logopart h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #000;
-}
+
 
 /* Navbar Links */
 .navbar-links {
@@ -74,7 +62,7 @@ body {
 }
 
 .navbar-links a:hover {
-  background-color: #f0f0f0;
+  background-color: #ddc3a0;
 }
 
 .navbar-links.active {
@@ -83,7 +71,7 @@ body {
   position: absolute;
   top: 100%;
   right: 20px;
-  background: white;
+  background: #ddc3a0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px 20px;
@@ -99,7 +87,7 @@ body {
 }
 
 .menu-icon svg {
-  fill: #000;
+  fill: black;
 }
 
 /* Sidebar */
@@ -109,7 +97,7 @@ body {
   right: 0;
   height: 100vh;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: #ddc3a0;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -150,7 +138,7 @@ body {
 }
 
 .sidebar a:hover {
-  background-color: #f0f0f0;
+  background-color: #e0a96d;
 }
 
 /* Responsive Design */

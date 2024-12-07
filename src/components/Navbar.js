@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../components/law-logo.jpg";
+import logo from "../components/law-logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu toggle
@@ -24,7 +24,6 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="logopart">
           <img src={logo} alt="Logo" className="navbar-logo" />
-          <h1>Konar Hukuk & Danışmanlık</h1>
         </div>
 
         {/* Navigation Links */}

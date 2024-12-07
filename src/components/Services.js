@@ -4,12 +4,8 @@ import './Services.css';
 const Services = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleMouseEnter = (index) => {
-    setActiveIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setActiveIndex(null);
+  const handleClick = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   const services = [
@@ -68,14 +64,14 @@ const Services = () => {
       <h2>Çalışma Alanlarımız</h2>
       <ul>
         {services.map((service, index) => (
-          <li 
-            key={index} 
-            onMouseEnter={() => handleMouseEnter(index)} 
-            onMouseLeave={handleMouseLeave}
+          <li
+            key={index}
+            onClick={() => handleClick(index)}  // Tıklandığında büyüt
+            className={activeIndex === index ? 'active' : ''}
           >
             <h3 className="service-title">{service.title}</h3>
-            <p 
-              className="service-description" 
+            <p
+              className="service-description"
               style={{ display: activeIndex === index ? 'block' : 'none' }}
             >
               {service.description}

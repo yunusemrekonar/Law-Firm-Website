@@ -1,36 +1,43 @@
 .home {
-    padding: 80px 20px;
-    text-align: left;
-    background-image: url('../components/law-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #333;
-    height: 100vh;
+    position: relative;
+    height: 500px; /* .home'un yüksekliği */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
-    
+    align-items: center;
+    justify-content: center; /* İçeriği dikeyde ortalar */
+    padding: 20px;
+    background-image: url("../components/law-background.jpg"); /* Arka plan resmi */
+    background-size: cover ; /* Resmi kapsayıcıya sığdırır */
+    background-repeat: no-repeat; /* Resmi tekrarlamaz */
+    background-position: initial ; /* Resmi ortalar */
 }
 
 .home h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 10px; 
+    font-size: 1.5rem;
+    color: #333; /* Metnin okunabilirliği için renk ayarı */
 }
 
+.home h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; 
+    text-align: center;
+}
+
+/* Mobil ekranlar için */
 @media (max-width: 768px) {
     .home h2 {
         font-size: 1.5rem; 
-        
     }
 
     .home {
         background-size: cover;
         background-position: center;
-        padding: 60px 20px; 
+        padding: 40px 10px; 
     }
 }
 
+/* Büyük ekranlar için */
 @media (min-width: 1200px) {
     .home {
         padding: 100px 60px; 
@@ -42,6 +49,7 @@
     }
 }
 
+/* Orta boyutlu ekranlar için */
 @media (min-width: 768px) and (max-width: 1200px) {
     .home {
         padding: 80px 40px; 
