@@ -9,7 +9,8 @@ const Contactus = () => {
     surname: '',
     phone: '',
     email: '',
-    message: ''
+    message: '',
+    honeypot: '' // Honeypot alanı ekliyoruz
   });
 
   // Form verilerini güncelleyen fonksiyon
@@ -24,6 +25,13 @@ const Contactus = () => {
   // Form gönderildiğinde çalışacak fonksiyon
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    // Eğer honeypot alanı dolmuşsa, formu spam olarak işaretle
+    if (formData.honeypot) {
+      alert("Formunuz spam olarak işaretlendi.");
+      return;
+    }
+
     emailjs.sendForm('service_id', 'template_id', e.target, 'user_id')
     .then((result) => {
       console.log(result.text);
@@ -34,12 +42,7 @@ const Contactus = () => {
     });
 
     // Form verilerini gönderme işlemi
-    // EmailJS gibi bir servisi kullanabilirsiniz.
-    // Aşağıda sadece basit bir konsola yazdırma işlemi yapılmaktadır.
     console.log("Form submitted:", formData);
-
-    // Burada bir e-posta gönderebilirsiniz.
-    // Örneğin, EmailJS veya başka bir API entegrasyonu yapılabilir.
 
     // Formu sıfırlıyoruz
     setFormData({
@@ -47,7 +50,8 @@ const Contactus = () => {
       surname: '',
       phone: '',
       email: '',
-      message: ''
+      message: '',
+      honeypot: '' // Honeypot alanını sıfırlıyoruz
     });
 
     alert('Form başarıyla gönderildi!');
@@ -105,6 +109,15 @@ const Contactus = () => {
           onChange={handleChange}
           required
         ></textarea>
+
+        {/* Honeypot alanı gizli tutulacak */}
+        <input
+          type="text"
+          name="honeypot"
+          style={{ display: 'none' }} // Bu alan gizli olmalı
+          value={formData.honeypot}
+          onChange={handleChange}
+        />
 
         <button type="submit">Gönder</button>
       </form>

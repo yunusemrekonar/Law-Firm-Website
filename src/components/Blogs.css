@@ -1,0 +1,52 @@
+/* Genel stil ayarları */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 blog post için esnek grid düzeni */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .blog-post {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-post h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+  }
+  
+  .blog-post p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Hover efekti */
+  .blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive tasarım */
+  @media (max-width: 768px) {
+    .blog-container {
+      grid-template-columns: 1fr 1fr; /* Küçük ekranlarda 2 sütun */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-container {
+      grid-template-columns: 1fr; /* Çok küçük ekranlarda tek sütun */
+    }
+  }
+  

@@ -39,6 +39,9 @@ const Navbar = () => {
             <a href="#services">Çalışma Alanlarımız</a>
           </li>
           <li>
+            <a href="#blogs">Makaleler</a>
+          </li>
+          <li>
             <a href="#contact">İletişim</a>
           </li>
         </ul>

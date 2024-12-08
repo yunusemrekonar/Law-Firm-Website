@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Aboutus from './components/Aboutus';
 import Services from './components/Services';
+import Blogs from './components/Blogs';
 import { Helmet } from "react-helmet"; 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +24,7 @@ function App() {
       <Home></Home>
       <Aboutus></Aboutus>
       <Services></Services>
+      <Blogs></Blogs>
       <Contact></Contact>
       <Footer></Footer>
     </div>

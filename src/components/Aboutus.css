@@ -12,52 +12,61 @@
   text-align: justify;
 }
 
+/* Başlangıçta öğeler görünmez */
+.team-section, .about-text {
+  opacity: 0;
+  transform: translateX(0);
+  transition: all 1s ease-in-out;
+}
+
+/* Team section sağdan gelecek */
 .team-section {
-  align-items: center; /* Corrected from 'column' */
   flex: 1;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%); /* Başlangıçta sağda */
+  height: 365px;
 }
 
 .team-section h2 {
   font-family: 'Roboto', sans-serif;
-  align-items: column;
   margin-bottom: 20px;
   font-size: 22px;
   color: #333;
 }
-
+.team-section.visible-team{
+  height:fit-content;
+}
 .team-member {
   flex-direction: column;
-  height: 365px;
+  height: 100%;
   align-items: center;
   display: flex;
   margin-bottom: 20px;
+  
 }
 
 .team-member img {
-  align-items: column;
-  width: 55%;
-  height: auto;
+  width: auto;
+  height: 41vh;
   margin-right: 15px;
   margin-bottom: 25px;
 }
 
 .team-member h3 {
-  align-items: column;
   font-size: 18px;
   margin: 0;
   color: #222;
 }
 
 .team-member p {
-  align-items: column;
   font-size: 14px;
   color: #666;
 }
 
+/* About text soldan gelecek */
 .about-text {
   flex: 2;
   background-color: #fff;
@@ -65,6 +74,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 470px;
+  transform: translateX(-100%); /* Başlangıçta solda */
 }
 
 .about-text h2 {
@@ -79,10 +89,20 @@
   line-height: 1.6;
 }
 
+/* Animation trigger when they are visible */
+.visible-team {
+  opacity: 1;
+  transform: translateX(0); /* Sağdan içeri kayacak */
+}
+
+.visible-about {
+  opacity: 1;
+  transform: translateX(0); /* Soldan içeri kayacak */
+}
+
 /* For medium screens */
 @media (max-width: 1024px) {
   .aboutus {
-    height: auto;
     padding: 20px;
   }
 
@@ -91,25 +111,13 @@
     gap: 20px;
   }
 
-  .team-section {
+  .team-section, .about-text {
     width: 100%;
     padding: 15px;
-    align-items: center;
-  }
-
-  .about-text {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .team-member {
-    flex-direction: column;
-    align-items: center;
   }
 
   .team-member img {
-    height: auto;
-    margin-right: 0;
+    width: 80%;
     margin-bottom: 10px;
   }
 
@@ -142,23 +150,18 @@
   }
 
   .team-section {
-    align-items: center;
-    width: 100%;
     padding: 10px;
-    
   }
-  .team-section h2{
+
+  .team-section h2 {
     font-size: 1.8vh;
   }
-  .team-member {
-    flex-direction: column;
-    align-items: center;
-    height: 25vh;
 
+  .team-member {
+    height: 25vh;
   }
 
   .about-text {
-    width: 100%;
     padding: 10px;
   }
 

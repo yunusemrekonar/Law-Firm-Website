@@ -1,6 +1,7 @@
 .home {
     position: relative;
-    height: 500vh; /* Yükseklik, ekranın %50'sine orantılı */
+    height: 70vh; 
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +38,7 @@
 /* Orta küçük ekranlar (max-width: 768px) */
 @media (max-width: 768px) {
     .home {
-        height: 15vh; /* Yükseklik, ekranın %40'ına orantılı */
+        height: 40vh; /* Yükseklik, ekranın %40'ına orantılı */
         padding: 7vw; /* Padding, ekran genişliğine orantılı */
     }
 
@@ -62,6 +63,7 @@
 @media (min-width: 1200px) {
     .home {
         height: 70vh; /* Yükseklik, ekranın %50'sine orantılı */
+        
         padding: 4vw; /* Padding, ekran genişliğine orantılı */
     }
 
