@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import 'swiper/swiper-bundle.css';
 import './Services.css';
 import { Pagination, Navigation } from 'swiper/modules';
 
-export default function Services() {
+const Services = () => {
   const [swiperRef, setSwiperRef] = useState(null);
 
   const services = [
@@ -63,3 +61,4 @@ export default function Services() {
     </>
   );
 }
+export default Services;
