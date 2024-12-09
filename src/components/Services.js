@@ -5,7 +5,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Services.css';
 import { Pagination, Navigation } from 'swiper/modules';
-import { Heading2 } from 'lucide-react';
 
 export default function Services() {
   const [swiperRef, setSwiperRef] = useState(null);
