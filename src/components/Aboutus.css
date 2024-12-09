@@ -12,22 +12,21 @@
   text-align: justify;
 }
 
-/* Başlangıçta öğeler görünmez */
+
 .team-section, .about-text {
   opacity: 0;
   transform: translateX(0);
   transition: all 1s ease-in-out;
 }
 
-/* Team section sağdan gelecek */
+
 .team-section {
   flex: 1;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transform: translateX(100%); /* Başlangıçta sağda */
-  height: 365px;
+  transform: translateX(100%); 
 }
 
 .team-section h2 {
@@ -36,6 +35,7 @@
   font-size: 22px;
   color: #333;
 }
+
 .team-section.visible-team{
   height:fit-content;
 }
@@ -44,20 +44,17 @@
   height: 100%;
   align-items: center;
   display: flex;
-  margin-bottom: 20px;
-  
 }
 
 .team-member img {
   width: auto;
-  height: 41vh;
-  margin-right: 15px;
-  margin-bottom: 25px;
+  height: 35vh;
+  align-items: center;
 }
 
 .team-member h3 {
   font-size: 18px;
-  margin: 0;
+  margin-top: 1.5vh;
   color: #222;
 }
 
@@ -66,41 +63,40 @@
   color: #666;
 }
 
-/* About text soldan gelecek */
 .about-text {
   flex: 2;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 470px;
+  height: auto;
   transform: translateX(-100%); /* Başlangıçta solda */
 }
 
 .about-text h2 {
   margin-bottom: 20px;
   font-size: 24px;
-  color: #222;
+  color:black;
 }
 
 .about-text p {
-  font-size: 16px;
-  color: #555;
+  font-size: 14px;
+  color: black;
   line-height: 1.6;
 }
 
-/* Animation trigger when they are visible */
+
 .visible-team {
   opacity: 1;
-  transform: translateX(0); /* Sağdan içeri kayacak */
+  transform: translateX(0); 
 }
 
 .visible-about {
   opacity: 1;
-  transform: translateX(0); /* Soldan içeri kayacak */
+  transform: translateX(0); 
 }
 
-/* For medium screens */
+
 @media (max-width: 1024px) {
   .aboutus {
     padding: 20px;
@@ -138,7 +134,7 @@
   }
 }
 
-/* For small screens (mobile) */
+
 @media (max-width: 768px) {
   .aboutus {
     padding: 15px;

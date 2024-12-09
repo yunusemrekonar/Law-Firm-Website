@@ -30,9 +30,15 @@
 
 .contact .contact-info p {
   font-size: 18px;
-  line-height: 1.6; /* Improve readability */
   margin: 15px 0;
   color: #555;
+  display: flex;         /* Flexbox ile hizalama */
+  align-items: center;   /* Yükseklik olarak ortalamak için */
+}
+
+.contact .contact-info p svg {
+  margin-right: 10px;    /* İkon ile metin arasında boşluk bırakmak için */
+  font-size: 24px;       /* İkon boyutunu ayarlamak için */
 }
 
 /* Contact Form Section */

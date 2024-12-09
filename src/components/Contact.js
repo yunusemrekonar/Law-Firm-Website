@@ -1,15 +1,17 @@
 import React from 'react';
 import './Contact.css';
-
+import HomeIcon from '@mui/icons-material/Home';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import EmailIcon from '@mui/icons-material/Email';
 const Contact = () => {
   return (
     <section id="contact" className="contact">
       
       <div className="contact-info">
         <h2>İletişim Bilgileri</h2>
-        <p>Adres: Kocatepe Mah. Hatay Sk. Tülta İş Hanı No:6/9 Çankaya - Ankara</p>
-        <p>Telefon: +90 (534) 828 38 06</p>
-        <p>E-Posta: konarhukuk@gmail.com</p>
+        <p><HomeIcon/>Kocatepe Mah. Hatay Sk. Tülta İş Hanı No:6/9 Çankaya - Ankara</p>
+        <p><PhoneIphoneIcon/>+90 (534) 828 38 06</p>
+        <p><EmailIcon/>konarhukuk@gmail.com</p>
       </div>
 
      

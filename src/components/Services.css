@@ -1,166 +1,87 @@
-.services {
-  padding: 20px;
-  text-align: center;
-  position: relative;
+
+/* Swiper container'ı */
+.swiper {
+  width: 90%; /* Genişliği %100 yaparak ekranı doldurur */
+  height: auto; /* Yüksekliği otomatik ayarlar */
+  display: flex; /* İçeriği flex olarak hizalar */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  position: relative; /* Pagination'ın doğru yerleşmesi için */
 }
 
-.slick-slide {
+/* Swiper slide */
+.swiper-slide {
+  font-size: 20px;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10px;
+  flex-direction: column; /* Resim ve başlığı dikey hizalar */
 }
 
-.service-item {
+/* Swiper slide içerisindeki resim */
+.swiper-slide img {
+  display: block;
+  width: auto;
+  height: 40vh; /* Resmin yüksekliği */
+}
+
+/* Başlık */
+.swiper-slide h3 {
+  margin-top: 10px; /* Başlık için boşluk ekleyin */
+  font-size: 14px;
+  color: #000000; /* Başlık rengi */
   text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 350px;
+  margin-bottom: 5vh;
+}
+
+/* Pagination'ı sayfanın alt kısmına sabitleme */
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px; /* Alt kısımda 20px mesafe */
+  left: 50%;
+  z-index: 999; /* Üstte görünmesini sağlamak */
+  text-align: center;
+}
+
+/* Pagination bullets'ları arasındaki mesafeyi ayarlama */
+.swiper-pagination-bullets {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center; /* Yatayda ortalama */
 }
 
-.service-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+/* Pagination bullets boyutu ve rengi */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ddc3a5;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: 0 5px; /* Bullet'lar arasındaki boşluğu ayarlama */
 }
 
-.service-title {
-  font-size: 1.5rem;
-  margin-top: 15px;
+/* Aktif bullet'ın rengi ve büyüklüğü */
+.swiper-pagination-bullet-active {
+  background-color: #e0a96d;
+  opacity: 1;
+  transform: scale(1.2); /* Aktif bullet'ı büyütme */
 }
 
-.service-description {
-  font-size: 1rem;
-  margin-top: 10px;
-  color: #555;
-}
-
-/* Slick Navigation Arrows */
-.slick-prev, .slick-next {
+/* Navigation okları (sol ve sağ) için ayrı bir konumlandırma */
+.swiper-button-next, .swiper-button-prev {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8); /* Opacity white background */
-  border: 2px solid #000;
-  border-radius: 25px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
+  z-index: 999;
+  transform: translateY(-50%); /* Yatayda tam ortalamak için */
 }
 
-.slick-prev {
-  left: 2px;
+/* Sol ok (Prev button) için pozisyon */
+.swiper-button-prev {
+  color: #e0a96d;
+  left: 10px;
 }
 
-.slick-next {
-  right: 2px;
-}
-
-.slick-prev:before, .slick-next:before {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
-}
-
-.slick-prev:before {
-  transform: rotate(-45deg);
-}
-
-.slick-next:before {
-  transform: rotate(45deg);
-}
-
-.slick-prev:after, .slick-next:after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
-}
-
-.slick-prev:after {
-  transform: rotate(45deg);
-}
-
-.slick-next:after {
-  transform: rotate(-45deg);
-}
-
-/* For medium screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .service-item {
-    height: 300px;
-  }
-
-  .service-title {
-    font-size: 1.25rem;
-  }
-
-  .service-description {
-    font-size: 0.95rem;
-  }
-
-  .slick-prev, .slick-next {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-/* For small screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .services {
-    padding: 15px;
-  }
-
-  .service-item {
-    height: 250px;
-  }
-
-  .service-title {
-    font-size: 1.1rem;
-  }
-
-  .service-description {
-    font-size: 0.9rem;
-  }
-
-  .slick-prev, .slick-next {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-/* For extra small screens (max-width: 480px) */
-@media (max-width: 480px) {
-  .service-item {
-    height: 220px;
-  }
-  .services h2{
-    font-size: 1.8vh;
-  }
-  .service-title {
-    font-size: 0.8rem;
-  }
-
-  .service-description {
-    font-size: 0.6rem;
-  }
-
-  .slick-prev, .slick-next {
-    width: 25px;
-    height: 25px;
-  }
+/* Sağ ok (Next button) için pozisyon */
+.swiper-button-next {
+  color: #e0a96d;
+  right: 10px;
 }
