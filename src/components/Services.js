@@ -4,10 +4,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Services.css';
-
 import { Pagination, Navigation } from 'swiper/modules';
+import { Heading2 } from 'lucide-react';
+
 
 export default function Services() {
+  
   const [swiperRef, setSwiperRef] = useState(null);
 
   let appendNumber = 4;
@@ -103,9 +105,12 @@ export default function Services() {
 
 
   ];
-
+  
+  <h2>Çalışma Alanlarımız</h2>
+      
   return (
-    <>
+        
+    <>  
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={3}
@@ -121,6 +126,7 @@ export default function Services() {
         className="mySwiper"
       >
         {services.map((service, index) => (
+          
           <SwiperSlide key={index}>
             <div id='services' className="services">
               <img src={service.image} alt={service.title} />

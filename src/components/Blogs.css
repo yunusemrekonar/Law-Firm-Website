@@ -3,4 +3,9 @@ h2 {
     margin-top: 20px;   /* Başlık ile üst boşluk */
     font-size: 2rem;    /* Başlık boyutunu ayarlayın */
     color: #333;        /* Başlık rengi */
+    border-bottom: 2px solid #e0a96d;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+
   }

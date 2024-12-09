@@ -8,25 +8,40 @@ import Aboutus from './components/Aboutus';
 import Services from './components/Services';
 import Blogs from './components/Blogs';
 import { Helmet } from "react-helmet";   
-
-
+import './components/whatsapp.css'; 
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 function App() {
   return (
-    <div className="App">
-      <Helmet>
-        <meta name="description" content="Ankara Konar Hukuk ve Danışmanlık olarak, hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlası için bize başvurun." />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ankara Konar Hukuk & Danışmanlık</title>
-      </Helmet>
-      <Navbar></Navbar>
-      <Home></Home>
-      <Aboutus></Aboutus>
-      <Services/>
-      <Blogs></Blogs>
-      <Contact></Contact>
-      <Footer></Footer>
-    </div>
+
+      <div className="App">
+        {/* WhatsApp Floating Button */}
+        <FloatingWhatsApp
+          phoneNumber="+90 506 835 18 93" 
+          chatMessage="Merhaba, size nasıl yardımcı olabiliriz?" 
+          accountName="Konar Hukuk & Danışmanlık" 
+          placeholder="Lütfen mesajınızı iletiniz"
+          statusMessage="Aktif"
+          allowClickAway
+          notification
+        />
+
+        {/* Meta & Title */}
+        <Helmet>
+          <meta name="description" content="Ankara Konar Hukuk ve Danışmanlık olarak, hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlası için bize başvurun." />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Ankara Konar Hukuk & Danışmanlık</title>
+        </Helmet>
+
+        {/* Navigation Bar */}
+        <Navbar />
+        <Home />
+        <Aboutus />
+        <Services />
+        <Blogs />
+        <Contact />
+        <Footer />
+      </div>
  
   );
 }

@@ -6,7 +6,7 @@
   display: flex; /* İçeriği flex olarak hizalar */
   justify-content: center; /* Yatayda ortalama */
   align-items: center; /* Dikeyde ortalama */
-  position: relative; /* Pagination'ın doğru yerleşmesi için */
+  position:relative; /* Pagination'ın doğru yerleşmesi için */
 }
 
 /* Swiper slide */
