@@ -48,7 +48,7 @@ const Aboutus = () => {
     <section id="aboutus" className="aboutus">
       <div className="aboutus-content">
         <div ref={teamSectionRef} className="team-section">
-          <h2>Kurucumuz</h2>
+          <h2>Kurucumuzu</h2>
           <div className="team-member">
             <img src={team1} alt="Avukat Ayşenur Konar" />
             <h3>Av.Ayşenur Konar</h3>
