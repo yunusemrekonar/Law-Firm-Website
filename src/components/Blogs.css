@@ -1,11 +1,17 @@
+/* H2 başlık stilleri */
 h2 {
-    text-align: center; /* Başlığı ortalar */
-    margin-top: 20px;   /* Başlık ile üst boşluk */
-    font-size: 2rem;    /* Başlık boyutunu ayarlayın */
-    color: #333;        /* Başlık rengi */
-    border-bottom: 2px solid #e0a96d;
-    justify-content: center;
-    align-items: center;
-    align-items: flex-start;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 22px;
+  color: #333;
+  border-bottom: 2px solid #e0a96d;
+}
 
-  }
+/* Açılır kısım */
+.despart {
+  width: 100vw; /* Tüm ekran genişliği */
+  background-color: #f9f9f9; /* Arka plan rengi */
+  padding: 16px; /* İçerik boşluğu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölgeli görünüm */
+  margin-top: 8px; /* Kartla arada boşluk */
+}

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Card, CardActionArea, CardMedia, CardContent, Typography, Box, Collapse, Button } from '@mui/material';
+import { Card, CardActionArea, CardMedia, CardContent, Typography, Box, Collapse } from '@mui/material';
 import './Blogs.css';
 
 const BlogCards = () => {
-  const [selectedBlog, setSelectedBlog] = useState(null);  // Tıklanan blogu saklamak için durum
+  const [selectedBlog, setSelectedBlog] = useState(null); // Tıklanan blogu saklamak için durum
 
   const blogs = [
     { id: 1, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile hukuku ile ilgili temel bilgiler." },
@@ -13,12 +13,11 @@ const BlogCards = () => {
   ];
 
   const handleClick = (id) => {
-    // Tıklanan blogu kontrol et ve toggl et
     setSelectedBlog(selectedBlog === id ? null : id);
   };
 
   return (
-    <Box 
+    <Box
       display="flex"
       flexWrap="wrap"
       justifyContent="center"
@@ -28,13 +27,12 @@ const BlogCards = () => {
       <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
         <h2 id='blogs'>Hukuki Makaleler</h2>
       </Box>
-      
+
       {/* Kartlar */}
       {blogs.map((blog) => (
         <Box key={blog.id} flex={1} minWidth="240px" maxWidth="345px">
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 345, position: 'relative' }}>
             <CardActionArea onClick={() => handleClick(blog.id)}>
-              {/* Blog Kartı Tıklandığında Detayı Göster */}
               <CardMedia
                 component="img"
                 height="140"
@@ -51,17 +49,16 @@ const BlogCards = () => {
               </CardContent>
             </CardActionArea>
 
-            {/* Sadece Tıklanan Blogun Detayı Gösterilecek */}
+            {/* Açılır Kısım */}
             <Collapse in={selectedBlog === blog.id} timeout="auto" unmountOnExit>
-              <CardContent>
+              <Box className="despart">
                 <Typography variant="body2" color="text.secondary">
-                  {/* Burada detay içeriği olacak */}
                   {blog.id === 1 && "Aile hukuku, boşanma, nafaka ve velayet gibi konuları içerir."}
                   {blog.id === 2 && "Ceza hukuku, suçlar ve cezalar hakkında bilgi verir."}
                   {blog.id === 3 && "Ticaret hukuku, şirketlerin kurulması, ticaret anlaşmaları ve diğer iş süreçleri hakkında bilgi sağlar."}
-                  {blog.id === 4 && "Miras hukuku, vefat durumunda mal paylaşımı ve varislik hakkında detaylar sunar."}.
+                  {blog.id === 4 && "Miras hukuku, vefat durumunda mal paylaşımı ve varislik hakkında detaylar sunar."}
                 </Typography>
-              </CardContent>
+              </Box>
             </Collapse>
           </Card>
         </Box>

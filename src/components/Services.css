@@ -1,12 +1,21 @@
+.myheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #e0a96d;
+  padding-bottom: 1vh;
+  margin-bottom: 3vh;
+  font-size: 22px;
+}
 
 /* Swiper container'ı */
 .swiper {
-  width: 90%; /* Genişliği %100 yaparak ekranı doldurur */
-  height: auto; /* Yüksekliği otomatik ayarlar */
-  display: flex; /* İçeriği flex olarak hizalar */
-  justify-content: center; /* Yatayda ortalama */
-  align-items: center; /* Dikeyde ortalama */
-  position:relative; /* Pagination'ın doğru yerleşmesi için */
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /* Swiper slide */
@@ -16,21 +25,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Resim ve başlığı dikey hizalar */
+  flex-direction: column;
 }
 
 /* Swiper slide içerisindeki resim */
 .swiper-slide img {
   display: block;
   width: auto;
-  height: 40vh; /* Resmin yüksekliği */
+  height: 40vh;
 }
 
 /* Başlık */
 .swiper-slide h3 {
-  margin-top: 10px; /* Başlık için boşluk ekleyin */
+  margin-top: 10px;
   font-size: 14px;
-  color: #000000; /* Başlık rengi */
+  color: #000000;
   text-align: center;
   margin-bottom: 5vh;
 }
@@ -38,16 +47,16 @@
 /* Pagination'ı sayfanın alt kısmına sabitleme */
 .swiper-pagination {
   position: absolute;
-  bottom: 20px; /* Alt kısımda 20px mesafe */
+  bottom: 20px;
   left: 50%;
-  z-index: 999; /* Üstte görünmesini sağlamak */
+  z-index: 999;
   text-align: center;
 }
 
 /* Pagination bullets'ları arasındaki mesafeyi ayarlama */
 .swiper-pagination-bullets {
   display: flex;
-  justify-content: center; /* Yatayda ortalama */
+  justify-content: center;
 }
 
 /* Pagination bullets boyutu ve rengi */
@@ -57,21 +66,21 @@
   background-color: #ddc3a5;
   border-radius: 50%;
   opacity: 0.7;
-  margin: 0 5px; /* Bullet'lar arasındaki boşluğu ayarlama */
+  margin: 0 5px;
 }
 
 /* Aktif bullet'ın rengi ve büyüklüğü */
 .swiper-pagination-bullet-active {
   background-color: #e0a96d;
   opacity: 1;
-  transform: scale(1.2); /* Aktif bullet'ı büyütme */
+  transform: scale(1.2);
 }
 
 /* Navigation okları (sol ve sağ) için ayrı bir konumlandırma */
 .swiper-button-next, .swiper-button-prev {
   position: absolute;
   z-index: 999;
-  transform: translateY(-50%); /* Yatayda tam ortalamak için */
+  transform: translateY(-50%);
 }
 
 /* Sol ok (Prev button) için pozisyon */
@@ -84,4 +93,50 @@
 .swiper-button-next {
   color: #e0a96d;
   right: 10px;
+}
+
+/* Mobile view responsive - Ekran genişliği 480px ve altı için */
+@media (max-width: 480px) {
+  .swiper {
+    width: 100%; /* Ekranda daha geniş görünmesini sağla */
+  }
+
+  .swiper-slide img {
+    height: 25vh; /* Resmin yüksekliğini küçük ekranlar için daha küçük yap */
+  }
+
+  .swiper-slide h3 {
+    font-size: 12px; /* Başlık boyutunu daha küçük yap */
+  }
+
+  .swiper-pagination {
+    bottom: 15px; /* Pagination'ı biraz daha yukarı al */
+  }
+
+  .swiper-pagination-bullets {
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet view responsive - Ekran genişliği 481px ile 768px arası için */
+@media (min-width: 481px) and (max-width: 768px) {
+  .swiper {
+    width: 100%; /* Ekranda geniş görünmesini sağla */
+  }
+
+  .swiper-slide img {
+    height: 30vh; /* Resmin yüksekliğini küçük ekranlar için uygun yap */
+  }
+
+  .swiper-slide h3 {
+    font-size: 13px; /* Başlık boyutunu küçük ekranlar için uygun yap */
+  }
+
+  .swiper-pagination {
+    bottom: 15px;
+  }
+
+  .swiper-pagination-bullets {
+    margin-bottom: 10px;
+  }
 }
