@@ -138,7 +138,8 @@
 
 @media (max-width: 768px) {
   .aboutus {
-    padding: 1.5vh;
+    justify-content: center;
+    align-items: center;
   }
 
   .aboutus-content {
@@ -148,6 +149,13 @@
 
   .team-section {
     padding: 1vh;
+    max-height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex; /* Flexbox kullanarak içeriği düzenleyin */
+    text-align: center; /* Başlık ve metinlerin ortalanmasını sağlar */
   }
 
   .team-section h2 {
@@ -155,39 +163,48 @@
   }
 
   .team-member {
-    height: 25vh;
-  }
-
-  .about-text {
-    padding: 1vh;
+    height: auto; /* Sabit yükseklik yerine içeriğe göre otomatik ayar */
+    width: auto;
+    display: flex; /* Flexbox kullanarak içeriği hizalayın */
+    flex-direction: column;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    margin: 0 auto; /* Ortalamak için margin */
   }
 
   .team-member img {
-    height: 20vh;
+    height: 40vh;
     width: auto;
     margin-right: 0;
-    margin-bottom: 0.8vh;
+    margin-bottom: -1vh; /* Resim ile metin arasına boşluk ekleyin */
   }
 
   .team-member h3 {
-    font-size: 1.2vh;
+    font-size: 2vh;
   }
 
   .team-member p {
-    font-size: 0.8vh;
+    font-size: 1.5vh;
+  }
+
+  .about-text {
+    padding: vh;
+    width: 100%;
+    height: auto;
+    transform: translateX(0); /* Başlangıçtaki kaydırma durumunu kaldırdık */
+    opacity: 1; /* Görünür yapıyoruz */
   }
 
   .about-text h2 {
-    font-size: 1.8vh;
+    font-size: 2vh;
     margin-top: 1vh;
   }
 
   .about-text p {
     margin-top: -1vh;
-    font-size: 0.9vh;
+    font-size: 1.3vh;
   }
 }
-
 
 @media (max-width: 458px) {
   .aboutus {
@@ -226,22 +243,22 @@
   }
 
   .team-member img {
-    height: 25vh;
+    height: 40vh;
     width: auto;
     margin-right: 0;
     margin-bottom: -1vh; /* Resim ile metin arasına boşluk ekleyin */
   }
 
   .team-member h3 {
-    font-size: 1.2vh;
+    font-size: 2vh;
   }
 
   .team-member p {
-    font-size: 0.8vh;
+    font-size: 1.5vh;
   }
 
   .about-text {
-    padding: 1vh;
+    padding: vh;
     width: 100%;
     height: auto;
     transform: translateX(0); /* Başlangıçtaki kaydırma durumunu kaldırdık */
@@ -249,12 +266,12 @@
   }
 
   .about-text h2 {
-    font-size: 1.8vh;
+    font-size: 2vh;
     margin-top: 1vh;
   }
 
   .about-text p {
     margin-top: -1vh;
-    font-size: 1vh;
+    font-size: 1.3vh;
   }
 }

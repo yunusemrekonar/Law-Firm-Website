@@ -183,15 +183,15 @@
 /* For screens smaller than 450px */
 @media (max-width: 500px) {
   .navbar {
-    max-height: 7vh;
+    max-height: 10vh;
     justify-content: space-between;
     padding: 1vh 2vh;
     display: flex;
   }
 
   .navbar-logo {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 45%;
+    max-height: 45%;
     margin-left: -50%;
 
   }

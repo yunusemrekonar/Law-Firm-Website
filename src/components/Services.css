@@ -102,11 +102,11 @@
   }
 
   .swiper-slide img {
-    height: 25vh; /* Resmin yüksekliğini küçük ekranlar için daha küçük yap */
+    height: 30vh; /* Resmin yüksekliğini küçük ekranlar için daha küçük yap */
   }
 
   .swiper-slide h3 {
-    font-size: 1.2vh; /* Başlık boyutunu daha küçük yap */
+    font-size: 1.5vh; /* Başlık boyutunu daha küçük yap */
   }
 
   .swiper-pagination {

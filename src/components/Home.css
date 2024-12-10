@@ -1,16 +1,17 @@
 .home {
     position: relative;
-    height: 70vh; 
-    width: auto;
+    height: 100vh; /* Yükseklik, tarayıcı yüksekliğini kapsar */
+    width: 100vw; /* Genişlik, tarayıcı genişliğini kapsar */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Vertikal olarak ortalanır */
-    padding: 5vw; /* Yüzde olarak padding */
-    background-image: url("../assets/law-background.jpg"); /* Arka plan resmi */
-    background-size: cover; /* Resmi konteynıra sığdırır */
-    background-repeat: no-repeat; /* Arka planın tekrarlanmasını engeller */
-    background-position: center; /* Arka planın ortalanması */
+    justify-content: center; /* Dikey olarak ortalar */
+    padding: 5vw; /* Kenarlara eşit boşluk */
+    background-image: url("../assets/law-background.jpg"); /* Masaüstü için arka plan resmi */
+    background-size: cover; /* Resim kapsayıcıyı doldurur */
+    background-repeat: no-repeat; /* Tekrarı engeller */
+    background-position: center; /* Ortalanır */
+    overflow: hidden; /* Gereksiz taşmaları engeller */
 }
 
 .home h2 {
@@ -18,57 +19,54 @@
     font-size: 4vw; /* Font boyutu ekran genişliğine orantılı */
     color: #333; /* Yazı rengi */
     text-align: center;
-    margin: 0; /* Margin'i sıfırla */
+    margin: 0; /* Margin sıfır */
 }
-
-/* Ekran boyutuna göre responsive ayarlamalar */
 
 /* Küçük ekranlar (max-width: 480px) */
 @media (max-width: 480px) {
     .home {
-        max-height: 18vh;
-        width: auto; /* Yükseklik, ekranın %35'ine orantılı */
-        padding: 8vw; /* Padding, ekran genişliğine orantılı */
+        background-image: url("../assets/mobil-background.png"); /* Mobil için arka plan resmi */
+        padding: 8vw; /* Kenarlar için daha fazla boşluk */
     }
 
     .home h2 {
-        font-size: 8vw; /* Font boyutu ekran genişliğine göre daha büyük */
+        font-size: 8vw; /* Daha büyük font boyutu */
     }
 }
 
 /* Orta küçük ekranlar (max-width: 768px) */
 @media (max-width: 768px) {
     .home {
-        height: 40vh; /* Yükseklik, ekranın %40'ına orantılı */
-        padding: 7vw; /* Padding, ekran genişliğine orantılı */
+        height: 60vh; /* Yükseklik biraz azaltılır */
+        background-image: url("../assets/mobil-background.png"); /* Mobil için arka plan resmi */
+        padding: 7vw; /* Kenarlar için yeterli boşluk */
     }
 
     .home h2 {
-        font-size: 6vw; /* Font boyutu ekran genişliğine göre daha büyük */
+        font-size: 6vw; /* Orta ekran için font boyutu */
     }
 }
 
 /* Orta büyüklükteki ekranlar (768px - 1200px arası) */
 @media (min-width: 769px) and (max-width: 1200px) {
     .home {
-        height: 45vh; /* Yükseklik, ekranın %45'ine orantılı */
-        padding: 6vw; /* Padding, ekran genişliğine orantılı */
+        height: 80vh; /* Yükseklik daha fazla alan kapsar */
+        padding: 6vw;
     }
 
     .home h2 {
-        font-size: 5vw; /* Font boyutu ekran genişliğine göre ayarlanır */
+        font-size: 5vw;
     }
 }
 
 /* Büyük ekranlar (1200px ve üzeri) */
 @media (min-width: 1200px) {
     .home {
-        height: 70vh; /* Yükseklik, ekranın %50'sine orantılı */
-        
-        padding: 4vw; /* Padding, ekran genişliğine orantılı */
+        height: 90vh; /* Daha büyük ekranlar için yeterli yükseklik */
+        padding: 4vw;
     }
 
     .home h2 {
-        font-size: 3vw; /* Font boyutu ekran genişliğine orantılı */
+        font-size: 3vw;
     }
 }
