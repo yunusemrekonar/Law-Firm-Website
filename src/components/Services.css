@@ -5,7 +5,7 @@
   border-bottom: 2px solid #e0a96d;
   padding-bottom: 1vh;
   margin-bottom: 3vh;
-  font-size: 22px;
+  font-size: 2.2vh;
 }
 
 /* Swiper container'ı */
@@ -20,7 +20,7 @@
 
 /* Swiper slide */
 .swiper-slide {
-  font-size: 20px;
+  font-size: 2vh;
   background: #ffffff;
   display: flex;
   justify-content: center;
@@ -37,8 +37,8 @@
 
 /* Başlık */
 .swiper-slide h3 {
-  margin-top: 10px;
-  font-size: 14px;
+  margin-top: 1vh;
+  font-size: 1.4vh;
   color: #000000;
   text-align: center;
   margin-bottom: 5vh;
@@ -47,7 +47,7 @@
 /* Pagination'ı sayfanın alt kısmına sabitleme */
 .swiper-pagination {
   position: absolute;
-  bottom: 20px;
+  bottom: 2vh;
   left: 50%;
   z-index: 999;
   text-align: center;
@@ -61,12 +61,12 @@
 
 /* Pagination bullets boyutu ve rengi */
 .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
+  width: 1.2vh;
+  height: 1.2vh;
   background-color: #ddc3a5;
   border-radius: 50%;
   opacity: 0.7;
-  margin: 0 5px;
+  margin: 0 0.5vh;
 }
 
 /* Aktif bullet'ın rengi ve büyüklüğü */
@@ -86,13 +86,13 @@
 /* Sol ok (Prev button) için pozisyon */
 .swiper-button-prev {
   color: #e0a96d;
-  left: 10px;
+  left: 1vh;
 }
 
 /* Sağ ok (Next button) için pozisyon */
 .swiper-button-next {
   color: #e0a96d;
-  right: 10px;
+  right: 1vh;
 }
 
 /* Mobile view responsive - Ekran genişliği 480px ve altı için */
@@ -106,15 +106,15 @@
   }
 
   .swiper-slide h3 {
-    font-size: 12px; /* Başlık boyutunu daha küçük yap */
+    font-size: 1.2vh; /* Başlık boyutunu daha küçük yap */
   }
 
   .swiper-pagination {
-    bottom: 15px; /* Pagination'ı biraz daha yukarı al */
+    bottom: 1.5vh; /* Pagination'ı biraz daha yukarı al */
   }
 
   .swiper-pagination-bullets {
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
   }
 }
 
@@ -129,14 +129,14 @@
   }
 
   .swiper-slide h3 {
-    font-size: 13px; /* Başlık boyutunu küçük ekranlar için uygun yap */
+    font-size: 1.3vh; /* Başlık boyutunu küçük ekranlar için uygun yap */
   }
 
   .swiper-pagination {
-    bottom: 15px;
+    bottom: .15vh;
   }
 
   .swiper-pagination-bullets {
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
   }
 }

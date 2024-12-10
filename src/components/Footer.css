@@ -1,6 +1,6 @@
 .footer {
     height: auto; /* Allow height to adapt based on content */
-    padding: 20px 40px;
+    padding: 2vh 4vh;
     display: flex;
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
@@ -29,7 +29,7 @@
 /* Mobile View (max-width: 768px) */
 @media (max-width: 768px) {
     .footer {
-        padding: 15px 20px; /* Adjust padding for smaller screens */
+        padding: 1.5vh 2vh; /* Adjust padding for smaller screens */
         text-align: center;
         font-size: 0.8rem; /* Slightly smaller text for mobile */
         height: auto; /* Allow height to adapt based on content */
@@ -43,7 +43,7 @@
 /* Tablet View (max-width: 1200px) */
 @media (max-width: 1200px) {
     .footer {
-        padding: 30px 60px; /* Scaled padding for medium screens */
+        padding: 3vh 6vh; /* Scaled padding for medium screens */
     }
 
     .footer p {
@@ -54,7 +54,7 @@
 /* Extra Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
     .footer {
-        padding: 10px 15px; /* Adjust padding for very small screens */
+        padding: 1vh 1.5vh; /* Adjust padding for very small screens */
         font-size: 0.75rem; /* Smaller font size for very small screens */
         text-align: center; /* Center the content */
     }

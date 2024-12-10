@@ -3,7 +3,7 @@ import './Contact.css';
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
-import logo from "../components/law-logo.png";
+import logo from "../assets/law-logo.png";
 
 const Contact = () => {
   return (

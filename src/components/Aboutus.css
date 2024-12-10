@@ -1,12 +1,12 @@
 .aboutus {
-  padding: 40px;
+  padding: 4vh;
   background-color: #f4f4f4;
-  height: auto;
+  height: fit-content;
 }
 
 .aboutus-content {
   display: flex;
-  gap: 40px;
+  gap: 4vh;
   align-items: flex-start;
   justify-content: space-between;
   text-align: justify;
@@ -21,19 +21,19 @@
 .team-section {
   flex: 1;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 2vh;
+  border-radius: 0.8vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateX(100%); 
 }
 
 .team-section h2 {
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 20px;
-  font-size: 22px;
+  margin-bottom: 2vh;
+  font-size: 2vh;
   color: #333;
   border-bottom: 2px solid #e0a96d;
-  padding-bottom: 5px;
+  padding-bottom: 0.5vh;
 }
 
 .team-section.visible-team{
@@ -54,21 +54,21 @@
 }
 
 .team-member h3 {
-  font-size: 18px;
+  font-size: 1.8vh;
   margin-top: 1.5vh;
   color: #222;
 }
 
 .team-member p {
-  font-size: 14px;
+  font-size: 1.4vh;
   color: #666;
 }
 
 .about-text {
   flex: 2;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 2vh;
+  border-radius: 0.8vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: auto;
   transform: translateX(-100%); /* Başlangıçta solda */
@@ -76,14 +76,14 @@
 
 .about-text h2 {
   border-bottom: 2px solid #e0a96d;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 2vh;
+  font-size: 2.4vh;
   color:black;
-  padding-bottom: 5px;
+  padding-bottom: 0.5vh;
 }
 
 .about-text p {
-  font-size: 14px;
+  font-size: 1.4vh;
   color: black;
   line-height: 1.6;
 }
@@ -100,54 +100,54 @@
 
 @media (max-width: 1024px) {
   .aboutus {
-    padding: 20px;
+    padding: 1vh;
   }
 
   .aboutus-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 2vh;
   }
 
   .team-section, .about-text {
     width: 100%;
-    padding: 15px;
+    padding: 1.5vh;
   }
 
   .team-member img {
-    width: 80%;
-    margin-bottom: 10px;
+    height: 100%;
+    margin-bottom: 1vh;
   }
 
   .team-member h3 {
-    font-size: 16px;
+    font-size: 1.6vh;
   }
 
   .team-member p {
-    font-size: 12px;
+    font-size: 1.2vh;
   }
 
   .about-text h2 {
-    font-size: 20px;
+    font-size: 2vh;
   }
 
   .about-text p {
-    font-size: 14px;
+    font-size: 1.4vh;
   }
 }
 
 
 @media (max-width: 768px) {
   .aboutus {
-    padding: 15px;
+    padding: 1.5vh;
   }
 
   .aboutus-content {
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5vh;
   }
 
   .team-section {
-    padding: 10px;
+    padding: 1vh;
   }
 
   .team-section h2 {
@@ -159,22 +159,22 @@
   }
 
   .about-text {
-    padding: 10px;
+    padding: 1vh;
   }
 
   .team-member img {
     height: 20vh;
     width: auto;
     margin-right: 0;
-    margin-bottom: 8px;
+    margin-bottom: 0.8vh;
   }
 
   .team-member h3 {
-    font-size: 12px;
+    font-size: 1.2vh;
   }
 
   .team-member p {
-    font-size: 8px;
+    font-size: 0.8vh;
   }
 
   .about-text h2 {
@@ -184,6 +184,77 @@
 
   .about-text p {
     margin-top: -1vh;
-    font-size: 9px;
+    font-size: 0.9vh;
+  }
+}
+
+
+@media (max-width: 458px) {
+  .aboutus {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutus-content {
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+
+  .team-section {
+    padding: 1vh;
+    max-height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex; /* Flexbox kullanarak içeriği düzenleyin */
+    text-align: center; /* Başlık ve metinlerin ortalanmasını sağlar */
+  }
+
+  .team-section h2 {
+    font-size: 1.8vh;
+  }
+
+  .team-member {
+    height: auto; /* Sabit yükseklik yerine içeriğe göre otomatik ayar */
+    width: auto;
+    display: flex; /* Flexbox kullanarak içeriği hizalayın */
+    flex-direction: column;
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    margin: 0 auto; /* Ortalamak için margin */
+  }
+
+  .team-member img {
+    height: 25vh;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: -1vh; /* Resim ile metin arasına boşluk ekleyin */
+  }
+
+  .team-member h3 {
+    font-size: 1.2vh;
+  }
+
+  .team-member p {
+    font-size: 0.8vh;
+  }
+
+  .about-text {
+    padding: 1vh;
+    width: 100%;
+    height: auto;
+    transform: translateX(0); /* Başlangıçtaki kaydırma durumunu kaldırdık */
+    opacity: 1; /* Görünür yapıyoruz */
+  }
+
+  .about-text h2 {
+    font-size: 1.8vh;
+    margin-top: 1vh;
+  }
+
+  .about-text p {
+    margin-top: -1vh;
+    font-size: 1vh;
   }
 }

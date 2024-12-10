@@ -1,6 +1,6 @@
 .contactus {
   align-items: right;
-  padding: 50px;
+  padding: 5vh;
   background-color: #f4f4f4;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -8,39 +8,39 @@
 
 .contactus h2 {
   font-size: 2em;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: 60vh;
   margin: 0 auto;
 }
 
 .contact-form label {
   font-size: 1.2em;
-  margin-bottom: 8px;
+  margin-bottom: 0.8vh;
   text-align: left;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 1vh;
+  margin-bottom: 1.5vh;
   font-size: 1em;
   width: 100%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 0.5vh;
 }
 
 .contact-form button {
-  padding: 15px;
+  padding: 1.5vh;
   background-color: #333;
   color: white;
   font-size: 1.2em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5vh;
   cursor: pointer;
 }
 
@@ -51,7 +51,7 @@
 /* Mobile View Styles */
 @media (max-width: 768px) {
   .contactus {
-    padding: 20px; /* Reduced padding on smaller screens */
+    padding: 2vh; /* Reduced padding on smaller screens */
   }
 
   .contactus h2 {
@@ -60,7 +60,7 @@
 
   .contact-form {
     max-width: 100%; /* Allow form to take full width on small screens */
-    padding: 10px; /* Add padding for form elements */
+    padding: 1vh; /* Add padding for form elements */
   }
 
   .contact-form label {
@@ -80,7 +80,7 @@
 /* Extra small screens (max-width: 480px) */
 @media (max-width: 480px) {
   .contactus {
-    padding: 15px; /* Reduce padding further for very small screens */
+    padding: 1.5vh; /* Reduce padding further for very small screens */
   }
 
   .contactus h2 {
@@ -88,7 +88,7 @@
   }
 
   .contact-form {
-    padding: 5px; /* Reduce padding for the form on small screens */
+    padding: 0.5vh; /* Reduce padding for the form on small screens */
   }
 
   .contact-form label {

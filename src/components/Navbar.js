@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../components/law-logo.png";
+import logo from "../assets/law-logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu toggle

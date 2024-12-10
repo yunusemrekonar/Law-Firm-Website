@@ -6,7 +6,7 @@
 }
 
 :target {
-  scroll-margin-top: 109px;
+  scroll-margin-top: 14.5vh;
 }
 
 /* Navbar */
@@ -14,9 +14,9 @@
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 20px;
+  justify-content: space-between; /* Sol ve sağ öğeleri ayırmak için space-between kullanılıyor */
+  align-items: center; /* Dikeyde ortalamak için */
+  padding: 1vh 2vh;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -34,17 +34,13 @@
 .logopart {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 5vh;
+  justify-content: flex-start; /* Sol tarafa hizalamak için */
 }
 
 .navbar-logo {
   height: 8vh;
   margin-bottom: 2.3vh;
-}
-
-.navbar p {
-  display: none;
+  max-width: 100%; /* Logo boyutunun taşmaması için max-width ekleniyor */
 }
 
 /* Navbar Links */
@@ -59,8 +55,8 @@
   text-decoration: none;
   text-align: center;
   display: flex;
-  padding: 10px 10px;
-  border-radius: 5px;
+  padding: 1vh 1vh ;
+  border-radius: 0.5vh;
   color: black;
   font-size: 1rem;
 }
@@ -75,11 +71,11 @@
   flex-direction: column;
   position: absolute;
   top: 100%;
-  right: 20px;
+  right: 2vh;
   background: #ddc3a0;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 0.5vh;
+  padding: 1vh 2vh;
   z-index: 20;
 }
 
@@ -88,7 +84,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  display: none;
+  display: none; /* Başlangıçta gizli */
 }
 
 .menu-icon svg {
@@ -101,14 +97,14 @@
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 25vh;
   background-color: #ddc3a0;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -1vh 0 1vh rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 2vh;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 15;
@@ -124,22 +120,22 @@
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 .sidebar li {
   list-style: none;
   width: 100%;
-  margin: 10px 0;
+  margin: 1vh 0;
 }
 
 .sidebar a {
   text-decoration: none;
-  padding: 10px;
+  padding: 1vh;
   display: block;
   width: 100%;
   color: black;
-  border-radius: 5px;
+  border-radius: 0.5vh;
 }
 
 .sidebar a:hover {
@@ -169,7 +165,7 @@
 
   .navbar {
     height: auto;
-    padding: 10px;
+    padding: 1vh;
   }
 }
 
@@ -185,22 +181,28 @@
 }
 
 /* For screens smaller than 450px */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .navbar {
-    height: 5vh;
+    max-height: 7vh;
+    justify-content: space-between;
+    padding: 1vh 2vh;
+    display: flex;
   }
 
-.navbar-logo{
-    height: 8vh;
-    max-height: 8vh;
-    min-height: 4vh;
+  .navbar-logo {
+    max-width: 40%;
+    max-height: 40%;
+    margin-left: -50%;
+
   }
 
   .navbar-links {
-    gap: 10px;
+    gap: 1vh;
   }
 
   .menu-icon {
     display: flex;
+    justify-content: flex-end;
+    margin-right: -20%; /* Sağda hizalamak için */
   }
 }

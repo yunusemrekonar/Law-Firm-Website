@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Aboutus.css';
-import team1 from '../components/team1.jpg';
+import team1 from '../assets/team1.jpg';
 
 const Aboutus = () => {
   // Refs for the sections to observe

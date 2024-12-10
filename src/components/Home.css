@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center; /* Vertikal olarak ortalanır */
     padding: 5vw; /* Yüzde olarak padding */
-    background-image: url("../components/law-background.jpg"); /* Arka plan resmi */
+    background-image: url("../assets/law-background.jpg"); /* Arka plan resmi */
     background-size: cover; /* Resmi konteynıra sığdırır */
     background-repeat: no-repeat; /* Arka planın tekrarlanmasını engeller */
     background-position: center; /* Arka planın ortalanması */
@@ -26,7 +26,8 @@
 /* Küçük ekranlar (max-width: 480px) */
 @media (max-width: 480px) {
     .home {
-        height: 35vh; /* Yükseklik, ekranın %35'ine orantılı */
+        max-height: 18vh;
+        width: auto; /* Yükseklik, ekranın %35'ine orantılı */
         padding: 8vw; /* Padding, ekran genişliğine orantılı */
     }
 
