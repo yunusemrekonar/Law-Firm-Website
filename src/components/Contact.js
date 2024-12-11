@@ -4,9 +4,19 @@ import HomeIcon from '@mui/icons-material/Home';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import logo from "../assets/law-logo.png";
+import { Helmet } from 'react-helmet'; 
 
 const Contact = () => {
   return (
+<>  
+      <Helmet>
+        <title>İletisim - Konar Hukuk & Danismanlik</title>
+        <meta name="description" content="Konar Hukuk & Danismanlik ile iletişime geçin. Avukatlik ve danismanlik hizmetleri hakkinda bilgi ve iletişim için bize ulaşin." />
+        <meta name="keywords" content="Ankara avukat,Çankay avukat, iletişim, hukuk, danismanlik, avukatlik ofisi, avukat Ayşenur Konar" />
+        <meta name="author" content="Avukat Ayşenur Konar" />
+      </Helmet>
+
+
     <section id="ankara-avukat-iletisim" className="contact">
       
       <div className="contact-info">
@@ -46,6 +56,8 @@ const Contact = () => {
 </iframe>
         </div>
     </section>
+    </>
+
   );
 };
 

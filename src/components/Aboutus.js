@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Aboutus.css';
 import team1 from '../assets/team1.jpg';
+import { Helmet } from 'react-helmet'; 
 
 const Aboutus = () => {
 
@@ -44,6 +45,14 @@ const Aboutus = () => {
   }, []);
 
   return (
+<>
+  <Helmet>
+    <title>Hakkimizda - Ankara Avukatlik</title>
+    <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
+    <meta name="keywords" content="Ankara, avukatlik, danismanlik, hukuk, müvekkil memnuniyeti" />
+    <meta name="author" content="Avukat Ayşenur Konar" />
+  </Helmet>
+
     <section id="ankara-avukat-hakkimizda" className="aboutus">
       <div className="aboutus-content">
         <div ref={teamSectionRef} className="team-section">
@@ -64,6 +73,7 @@ const Aboutus = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
