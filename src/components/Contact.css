@@ -158,6 +158,14 @@
 }
 
 @media (max-width: 768px) {
+  .contact .contact-info p{
+    font-size: 1.5vh;
+  }
+  .contact .contact-info p svg {
+    margin-right: 0.7vh;    
+    font-size: 2vh;       
+  }
+  
   .google-maps h2{
     font-size: 2vh;
   }
@@ -212,6 +220,13 @@
 }
 
 @media (max-width: 950px) {
+  .contact .contact-info p{
+    font-size: 1.5vh;
+  }
+  .contact .contact-info p svg {
+    margin-right: 0.7vh;    
+    font-size: 2vh;       
+  }
   .google-maps h2{
     font-size: 2vh;
   }
@@ -227,7 +242,7 @@
   .contact .contact-form,
   .contact .google-maps {
     width: 100%; 
-    margin-bottom: 2vhx; 
+    margin-bottom: 2vh; 
     min-width: 0; 
   }
 
