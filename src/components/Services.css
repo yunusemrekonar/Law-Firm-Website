@@ -108,6 +108,9 @@
 
 /* Mobile view responsive - Ekran genişliği 480px ve altı için */
 @media (max-width: 480px) {
+  .service-container {
+    background-attachment: scroll; /* Mobilde arka planı kaydır */
+  }
   .swiper {
     width: 100%; /* Ekranda daha geniş görünmesini sağla */
   }
@@ -130,7 +133,10 @@
 }
 
 /* Tablet view responsive - Ekran genişliği 481px ile 768px arası için */
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 900px) {
+  .service-container {
+    background-attachment: scroll; /* Mobilde arka planı kaydır */
+  }
   .swiper {
     width: 100%; /* Ekranda geniş görünmesini sağla */
   }
