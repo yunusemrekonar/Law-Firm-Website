@@ -10,20 +10,15 @@
 }
 
 .navbar-container {
-  overflow: visible; 
-}
-.navbar {
-  position: sticky;
-  top: 0; 
+  overflow: visible;
 }
 
-/* Navbar */
 .navbar {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
   padding: 1vh 2vh;
   position: sticky;
   top: 0;
@@ -44,10 +39,54 @@
   align-items: flex-start;
 }
 
-
 .navbar-container .logopart .navbar-logo {
   width: 27vh;
   height: auto;
+}
+
+/* Hamburger Menü İkonu */
+.menu-toggle {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 12vh;
+  left: -250px; /* Başlangıçta gizli */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0; /* Menü açıldığında görünür yap */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a :hover{
+  color: #ddc3a0;
 }
 
 /* Navbar Links */
@@ -62,7 +101,7 @@
   text-decoration: none;
   text-align: center;
   display: flex;
-  padding: 1vh 1vh ;
+  padding: 1vh 1vh;
   border-radius: 0.5vh;
   color: black;
   font-size: 1rem;
@@ -86,118 +125,39 @@
   z-index: 200;
 }
 
+/* Masaüstü için navbar */
+@media (min-width: 800px) {
+  .menu-toggle {
+    display: none; /* Hamburger menü masaüstünde gizleniyor */
+  }
 
-.menu-icon {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none; 
+  .sidebar {
+    display: none; /* Sidebar masaüstünde gizleniyor */
+  }
+
+  .navbar-links {
+    display: flex;  /* Masaüstünde navbar linkleri görünür */
+  }
+
+  .navbar-links li {
+    margin-right: 2vh;  /* Linkler arasına mesafe ekliyoruz */
+  }
 }
-
-.menu-icon svg {
-  fill: black;
-}
-
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 25vh;
-  background-color: #ddc3a0;
-  box-shadow: -1vh 0 1vh rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 2vh;
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 150;
-}
-
-.sidebar.visible {
-  transform: translateX(0);
-}
-
-.sidebar-close {
-  align-self: flex-end;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-bottom: 2vh;
-}
-
-.sidebar li {
-  list-style: none;
-  width: 100%;
-  margin: 1vh 0;
-}
-
-.sidebar a {
-  text-decoration: none;
-  padding: 1vh;
-  display: block;
-  width: 100%;
-  color: black;
-  border-radius: 0.5vh;
-}
-
-.sidebar a:hover {
-  background-color: #e0a96d;
-}
-
 
 @media (max-width: 800px) {
   .navbar-links {
-    display: none;
-  }
-
-  .menu-icon {
-    display: flex;
-  }
-
-  .sidebar-toggle {
-    display: flex;
-  }
-
- 
-  .sidebar {
-    width: 100%;
+    display: none; /* Navbar linkleri mobilde gizli */
   }
 
   .navbar {
     height: auto;
     padding: 1vh;
   }
-  .menu-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto; 
-    padding: 1vh;
-    cursor: pointer;
 }
-}
-
-
-@media (min-width: 800px) {
-  .sidebar-toggle {
-    display: none;
-  }
-
-  .navbar-links {
-    display: flex;
-  }
-  
-}
-
 
 @media (max-width: 500px) {
   .navbar-container .logopart .navbar-logo {
-    width: 20vh ;
+    width: 20vh;
     height: auto;
     margin-left: 1vh;
   }
@@ -214,18 +174,9 @@
     width: 45%;
     height: 45%;
     margin-left: -50%;
-
   }
 
   .navbar-links {
     gap: 1vh;
   }
-  .menu-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto; 
-    padding: 1vh;
-    cursor: pointer;
-}
 }
