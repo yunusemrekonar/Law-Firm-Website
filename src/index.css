@@ -1,0 +1,23 @@
+/* Kaydırma çubuğu genel görünüm */
+::-webkit-scrollbar {
+    width: 10px; /* Yatay kaydırma çubuğu için */
+    height: 10px; /* Dikey kaydırma çubuğu için */
+  }
+  
+  /* Kaydırma çubuğunun arka planını değiştir */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Arka plan rengi */
+    border-radius: 10px; /* Yuvarlak köşeler */
+  }
+  
+  /* Kaydırma çubuğunun kendisini değiştir */
+  ::-webkit-scrollbar-thumb {
+    background: #e0a96d; /* Kaydırma çubuğunun rengi */
+    border-radius: 10px; /* Yuvarlak köşeler */
+  }
+  
+  /* Kaydırma çubuğu üzerine gelindiğinde renk değişikliği */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ddc3a5; /* Hover durumunda kaydırma çubuğu rengi */
+  }
+  

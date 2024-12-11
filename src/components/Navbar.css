@@ -6,7 +6,15 @@
 }
 
 :target {
-  scroll-margin-top: 14.5vh;
+  scroll-margin-top: 17vh;
+}
+
+.navbar-container {
+  overflow: visible; /* Bu, sticky navbar'ı engellemeyi önler */
+}
+.navbar {
+  position: sticky;
+  top: 0; /* Navbar'ın sayfanın üst kısmına yapışması için */
 }
 
 /* Navbar */
@@ -15,12 +23,12 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between; /* Sol ve sağ öğeleri ayırmak için space-between kullanılıyor */
-  align-items: center; /* Dikeyde ortalamak için */
+  align-items: center; 
   padding: 1vh 2vh;
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 15vh;
+  height: 12vh;
 }
 
 .navbar-container {
@@ -30,17 +38,16 @@
   justify-content: space-between;
 }
 
-/* Logo */
 .logopart {
   display: flex;
-  align-items: center;
-  justify-content: flex-start; /* Sol tarafa hizalamak için */
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.navbar-logo {
-  height: 8vh;
-  margin-bottom: 2.3vh;
-  max-width: 100%; /* Logo boyutunun taşmaması için max-width ekleniyor */
+
+.navbar-container .logopart .navbar-logo {
+  width: 27vh;
+  height: auto;
 }
 
 /* Navbar Links */
@@ -167,6 +174,14 @@
     height: auto;
     padding: 1vh;
   }
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Flex düzeninde sağa yaslar */
+    padding: 1vh;
+    cursor: pointer;
+}
 }
 
 /* For screens between 800px and 450px */
@@ -178,20 +193,28 @@
   .navbar-links {
     display: flex;
   }
+  
 }
 
 /* For screens smaller than 450px */
 @media (max-width: 500px) {
+  .navbar-container .logopart .navbar-logo {
+    width: 20vh ;
+    height: auto;
+    margin-left: 1vh;
+  }
+
   .navbar {
-    max-height: 10vh;
+    height: 12vh;
     justify-content: space-between;
     padding: 1vh 2vh;
     display: flex;
+    position: sticky;
   }
 
   .navbar-logo {
-    max-width: 45%;
-    max-height: 45%;
+    width: 45%;
+    height: 45%;
     margin-left: -50%;
 
   }
@@ -199,10 +222,12 @@
   .navbar-links {
     gap: 1vh;
   }
-
   .menu-icon {
     display: flex;
-    justify-content: flex-end;
-    margin-right: -20%; /* Sağda hizalamak için */
-  }
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; /* Flex düzeninde sağa yaslar */
+    padding: 1vh;
+    cursor: pointer;
+}
 }

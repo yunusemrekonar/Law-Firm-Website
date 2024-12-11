@@ -1,16 +1,26 @@
-.myheading {
-  display: flex;
-  align-items: center;
+.service-container {
+  background-image: url("../assets/services-background.jpg"); 
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.service-container h2 {
+  font-size: 3vh; /* Başlık boyutunu ihtiyacınıza göre ayarlayabilirsiniz */
+  text-align: center; /* Metni ortalamak isterseniz */
+  border-bottom: 2px solid #e0a96d; /* Alt çizgi: kalınlık, tür ve renk */
+  padding-bottom: 0.5vh; /* Başlık ile çizgi arasına boşluk ekler */
+  display: flex;; /* Çizgiyi başlık genişliğine göre sınırlar */
+  margin-bottom: 2vh;
+  padding-top: 2vh;
+  color: white;
   justify-content: center;
-  border-bottom: 2px solid #e0a96d;
-  padding-bottom: 1vh;
-  margin-bottom: 3vh;
-  font-size: 2.2vh;
+  
 }
 
 /* Swiper container'ı */
 .swiper {
-  width: 90%;
+  width: 95%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -21,7 +31,7 @@
 /* Swiper slide */
 .swiper-slide {
   font-size: 2vh;
-  background: #ffffff;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,16 +42,18 @@
 .swiper-slide img {
   display: block;
   width: auto;
-  height: 40vh;
+  height: 43vh;
 }
 
 /* Başlık */
 .swiper-slide h3 {
   margin-top: 1vh;
-  font-size: 1.4vh;
-  color: #000000;
+  font-size: 3vh;
+  color: white;
   text-align: center;
   margin-bottom: 5vh;
+  border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Pagination'ı sayfanın alt kısmına sabitleme */
@@ -49,7 +61,7 @@
   position: absolute;
   bottom: 2vh;
   left: 50%;
-  z-index: 999;
+  z-index: 1;
   text-align: center;
 }
 
@@ -63,7 +75,7 @@
 .swiper-pagination-bullet {
   width: 1.2vh;
   height: 1.2vh;
-  background-color: #ddc3a5;
+  background-color: white;
   border-radius: 50%;
   opacity: 0.7;
   margin: 0 0.5vh;
@@ -79,20 +91,19 @@
 /* Navigation okları (sol ve sağ) için ayrı bir konumlandırma */
 .swiper-button-next, .swiper-button-prev {
   position: absolute;
-  z-index: 999;
   transform: translateY(-50%);
 }
 
 /* Sol ok (Prev button) için pozisyon */
 .swiper-button-prev {
-  color: #e0a96d;
-  left: 1vh;
+  color: white;
+
 }
 
 /* Sağ ok (Next button) için pozisyon */
 .swiper-button-next {
-  color: #e0a96d;
-  right: 1vh;
+  color:white;
+
 }
 
 /* Mobile view responsive - Ekran genişliği 480px ve altı için */
@@ -125,7 +136,7 @@
   }
 
   .swiper-slide img {
-    height: 30vh; /* Resmin yüksekliğini küçük ekranlar için uygun yap */
+    height: 33.5vh; /* Resmin yüksekliğini küçük ekranlar için uygun yap */
   }
 
   .swiper-slide h3 {

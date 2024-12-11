@@ -1,17 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .home {
     position: relative;
-    height: 100vh; /* Yükseklik, tarayıcı yüksekliğini kapsar */
-    width: 100vw; /* Genişlik, tarayıcı genişliğini kapsar */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Dikey olarak ortalar */
-    padding: 5vw; /* Kenarlara eşit boşluk */
-    background-image: url("../assets/law-background.jpg"); /* Masaüstü için arka plan resmi */
-    background-size: cover; /* Resim kapsayıcıyı doldurur */
-    background-repeat: no-repeat; /* Tekrarı engeller */
-    background-position: center; /* Ortalanır */
-    overflow: hidden; /* Gereksiz taşmaları engeller */
+    background-image: url("../assets/law-background.jpg"); 
+    background-size: contain; 
+    background-repeat: no-repeat;
 }
 
 .home h2 {
@@ -19,14 +19,13 @@
     font-size: 4vw; /* Font boyutu ekran genişliğine orantılı */
     color: #333; /* Yazı rengi */
     text-align: center;
-    margin: 0; /* Margin sıfır */
 }
 
 /* Küçük ekranlar (max-width: 480px) */
 @media (max-width: 480px) {
     .home {
         background-image: url("../assets/mobil-background.png"); /* Mobil için arka plan resmi */
-        padding: 8vw; /* Kenarlar için daha fazla boşluk */
+        background-size: cover;
     }
 
     .home h2 {
@@ -50,8 +49,13 @@
 /* Orta büyüklükteki ekranlar (768px - 1200px arası) */
 @media (min-width: 769px) and (max-width: 1200px) {
     .home {
-        height: 80vh; /* Yükseklik daha fazla alan kapsar */
-        padding: 6vw;
+        height: 100vh;
+        position: relative;
+        background-position: relative;
+        background-image: url("../assets/mobil-background.png");
+        background-size: cover;
+        width: auto;
+        
     }
 
     .home h2 {
@@ -62,8 +66,10 @@
 /* Büyük ekranlar (1200px ve üzeri) */
 @media (min-width: 1200px) {
     .home {
-        height: 90vh; /* Daha büyük ekranlar için yeterli yükseklik */
-        padding: 4vw;
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        width: auto;
     }
 
     .home h2 {

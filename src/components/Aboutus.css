@@ -1,10 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .aboutus {
-  padding: 4vh;
   background-color: #f4f4f4;
-  height: fit-content;
+  background-position: relative;
+  display: flex;
+
 }
 
 .aboutus-content {
+  margin: 2vh;
+  position: relative;
   display: flex;
   gap: 4vh;
   align-items: flex-start;
@@ -31,10 +40,11 @@
 .team-section h2 {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 2vh;
-  font-size: 2vh;
-  color: #333;
+  font-size: 2.4vh;
+  color: black;
   border-bottom: 2px solid #e0a96d;
   padding-bottom: 0.5vh;
+  text-align: center;
 }
 
 .team-section.visible-team{
@@ -50,14 +60,15 @@
 
 .team-member img {
   width: auto;
-  height: 35vh;
+  height: 40vh;
   align-items: center;
 }
 
 .team-member h3 {
   font-size: 1.8vh;
   margin-top: 1.5vh;
-  color: #222;
+  color: black;
+  justify-content: flex-start;
 }
 
 .team-member p {
@@ -71,12 +82,12 @@
   padding: 2vh;
   border-radius: 0.8vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: auto;
-  
-  transform: translateX(-100%); /* Başlangıçta solda */
+  height: 54.5vh;
+  transform: translateX(-100%); 
 }
 
 .about-text h2 {
+  text-align: center;
   border-bottom: 2px solid #e0a96d;
   margin-bottom: 2vh;
   font-size: 2.4vh;
@@ -101,9 +112,7 @@
 }
 
 @media (max-width: 1024px) {
-  .aboutus {
-    padding: 1vh;
-  }
+ 
 
   .aboutus-content {
     flex-direction: column;
@@ -190,7 +199,6 @@
   }
 
   .about-text {
-    padding: vh;
     width: 100%;
     height: auto;
     transform: translateX(0); /* Başlangıçtaki kaydırma durumunu kaldırdık */
@@ -227,11 +235,13 @@
     align-items: center;
     flex-direction: column;
     display: flex; /* Flexbox kullanarak içeriği düzenleyin */
-    text-align: center; /* Başlık ve metinlerin ortalanmasını sağlar */
+    text-align: left; /* Bu, metni genel olarak sola hizalar */
   }
 
   .team-section h2 {
-    font-size: 1.8vh;
+    font-size: 2vh;
+    text-align: left; /* Başlığı sola hizalar */
+    width: 100%; /* Genişliği tam yaparak hizalamayı sağlıklı hale getirir */
   }
 
   .team-member {
@@ -252,7 +262,7 @@
   }
 
   .team-member h3 {
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
 
   .team-member p {
@@ -274,6 +284,6 @@
 
   .about-text p {
     margin-top: -1vh;
-    font-size: 1.3vh;
+    font-size: 1.5vh;
   }
 }

@@ -11,19 +11,18 @@
   justify-content: center;
 }
 
-
-.logopart {
+.contact-logopart {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2vh;
 }
 
-/* Logo resminin boyutunu ve stilini ayarlama */
-.logopart img {
-  width: 30vh; /* Logo genişliği */
-  height: auto; /* Oranlı boyutlandırma */
-  margin-top: 2vh;
+
+.contact-logopart img {
+  width: 30vh; 
+  height: auto; 
+  margin-top: 10vh;
 }
 
 
@@ -35,6 +34,7 @@
   border-radius: 1vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   min-width: 28vh; 
+  height: 70vh;
 }
 
 .contact .contact-info h2 {
@@ -43,20 +43,23 @@
   color: black;
   border-bottom: 2px solid #e0a96d; 
   padding-bottom: 0.5vh;
+  display: flex;
+  justify-content: center;
 }
 
 .contact .contact-info p {
-  font-size: 1.8vh;
+  font-size: 2.5vh;
   margin: 1.5vh 0;
   color: black;
   display: flex;        
   align-items: center;
-  line-height: 1.6;    
+  line-height: 1.5;   
+  padding: 1.5vh; 
 }
 
 .contact .contact-info p svg {
   margin-right: 1vh;    
-  font-size: 2.4vh;       
+  font-size: 4vh;       
 }
 
 /* Contact Form Section */
@@ -67,6 +70,7 @@
   border-radius: 1vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
   min-width: 28vh; 
+  height: 70vh;
 }
 
 .contact .contact-form h2 {
@@ -75,13 +79,17 @@
   color: black;
   border-bottom: 2px solid #e0a96d; 
   padding-bottom: 0.5vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
 }
 
 .contact .contact-form input,
 .contact .contact-form textarea {
   width: 100%; 
-  padding: 1.2vh;
-  margin-bottom: 2vh;
+  padding: 2vh;
+  margin-bottom: 3vh;
   border: 1px solid #ddd;
   border-radius: 0.8vh;
   font-size: 1.6vh;
@@ -99,7 +107,7 @@
 }
 
 .contact .contact-form button {
-  background-color: #333;
+  background-color: #e0a96d;
   color: white;
   padding: 1.2vh 2.0vh;
   border: none;
@@ -110,19 +118,20 @@
 }
 
 .contact .contact-form button:hover {
-  background-color: #555;
+  background-color: #ddc3a5;
   transform: scale(1.05); 
 }
 
 /* Google Maps Section */
 .contact .google-maps {
+  display: flex;
+  flex-direction: column;
   padding: 1.5vh;
-  height: auto;
+  height: 70vh;
   width: auto;
   background-color: white;
   flex: 1;
   border-radius: 1vh;
-  overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: center;
@@ -130,6 +139,7 @@
 }
 
 .google-maps h2 {
+  display: flex;
   font-size: 2.4vh;           
   font-weight: bold;         
   color: #333;               
@@ -144,16 +154,22 @@
   width: 100%;
   height: 100%;
   border: none;
-  align-items: center;
-  height: 57vh;
-  width: 60vh;
 }
 
 /* Mobile View Styles */
 @media (max-width: 768px) {
+  .contact .contact-logopart img {
+    width: 20vh; 
+    display: flex;
+    height: auto;
+  }
+  .contact.contact-info .contact-logopart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .contact {
     flex-direction: column; 
-    align-items: stretch;
     gap: 2vh; 
     padding: 2vh; 
     
@@ -167,18 +183,17 @@
     font-size: 1rem;
   }
   .contact .contact-info h2{
-  font-size: 1rem;
-
+  font-size: 1.3rem;
   }
   .contact .contact-info p{
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
   .contact .google-maps iframe {
     height: 30vh; 
   }
 
   .contact .contact-form h2{
-    font-size: 1rem;
+    font-size: 1.3rem;
 
   }
   .contact .contact-form input{

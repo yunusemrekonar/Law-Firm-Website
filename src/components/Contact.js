@@ -14,8 +14,8 @@ const Contact = () => {
         <p><HomeIcon/>Kocatepe Mah. Hatay Sk. Tülta İş Hanı No:6/9 Çankaya - Ankara</p>
         <p><PhoneIphoneIcon/>+90 (534) 828 38 06</p>
         <p><EmailIcon/>konarhukuk@gmail.com</p>
-        <div className="logopart">
-          <img src={logo} alt="Logo" className="navbar-logo" />
+        <div className="contact-logopart">
+          <img src={logo} alt="Logo" className="logo" />
         </div>
       </div>
 

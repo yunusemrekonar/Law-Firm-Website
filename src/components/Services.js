@@ -24,7 +24,8 @@ const Services = () => {
 
   return (
     <>
-      <h2 className='myheading'>Çalışma Alanlarımız</h2>
+    <div className='service-container'>
+      <h2>Çalışma Alanlarımız</h2>
       <Swiper
         onSwiper={setSwiperRef}
         centeredSlides={true}
@@ -58,7 +59,9 @@ const Services = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      </div>
     </>
+    
   );
 }
 export default Services;
