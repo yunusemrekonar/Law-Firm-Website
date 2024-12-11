@@ -40,13 +40,13 @@ const Services = () => {
         className="mySwiper"
         breakpoints={{
           1024: {
-            slidesPerView: 3,  // 1024px ve üstü için 3 slide
+            slidesPerView: 3,  
           },
           768: {
-            slidesPerView: 2,  // 768px ile 1024px arasında 2 slide
+            slidesPerView: 2,  
           },
           480: {
-            slidesPerView: 1,  // 480px ve altı için 1 slide
+            slidesPerView: 1,  
           },
         }}
       >

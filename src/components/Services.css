@@ -1,18 +1,16 @@
 .service-container {
- /* background-image: url("../assets/services-background.jpg"); */
  background-color: #fff;
   background-position: center;
   max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .service-container h2 {
-  font-size: 3vh; /* Başlık boyutunu ihtiyacınıza göre ayarlayabilirsiniz */
-  text-align: center; /* Metni ortalamak isterseniz */
-  border-bottom: 2px solid #e0a96d; /* Alt çizgi: kalınlık, tür ve renk */
-  padding-bottom: 0.5vh; /* Başlık ile çizgi arasına boşluk ekler */
-  display: flex;; /* Çizgiyi başlık genişliğine göre sınırlar */
+  font-size: 3vh; 
+  text-align: center; 
+  border-bottom: 2px solid #e0a96d;
+  padding-bottom: 0.5vh; 
+  display: flex;; 
   margin-bottom: 2vh;
   padding-top: 2vh;
   color: black;
@@ -20,7 +18,6 @@
   
 }
 
-/* Swiper container'ı */
 .swiper {
   width: 95%;
   height: auto;
@@ -30,7 +27,6 @@
   position: relative;
 }
 
-/* Swiper slide */
 .swiper-slide {
   font-size: 2vh;
   background-color: transparent;
@@ -40,7 +36,6 @@
   flex-direction: column;
 }
 
-/* Swiper slide içerisindeki resim */
 .swiper-slide img {
   display: block;
   border-radius: 1vh;
@@ -48,7 +43,6 @@
   height: 44vh;
 }
 
-/* Başlık */
 .swiper-slide h3 {
   margin-top: 1vh;
   font-size: 3vh;
@@ -57,7 +51,6 @@
   margin-bottom: 5vh;
 }
 
-/* Pagination'ı sayfanın alt kısmına sabitleme */
 .swiper-pagination {
   position: absolute;
   bottom: 2vh;
@@ -66,13 +59,11 @@
   text-align: center;
 }
 
-/* Pagination bullets'ları arasındaki mesafeyi ayarlama */
 .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
 }
 
-/* Pagination bullets boyutu ve rengi */
 .swiper-pagination-bullet {
   width: 1.2vh;
   height: 1.2vh;
@@ -82,38 +73,33 @@
   margin: 0 0.5vh;
 }
 
-/* Aktif bullet'ın rengi ve büyüklüğü */
 .swiper-pagination-bullet-active {
   background-color: #e0a96d;
   opacity: 1;
   transform: scale(1.2);
 }
 
-/* Navigation okları (sol ve sağ) için ayrı bir konumlandırma */
 .swiper-button-next, .swiper-button-prev {
   position: absolute;
   transform: translateY(-50%);
 }
 
-/* Sol ok (Prev button) için pozisyon */
 .swiper-button-prev {
   color: black;
 
 }
 
-/* Sağ ok (Next button) için pozisyon */
 .swiper-button-next {
   color:black;
 
 }
 
-/* Mobile view responsive - Ekran genişliği 480px ve altı için */
 @media (max-width: 480px) {
   .service-container {
     background-attachment: fixed;
   }
   .swiper {
-    width: 100%; /* Ekranda daha geniş görünmesini sağla */
+    width: 100%; 
   }
 
   .swiper-slide img {
@@ -122,11 +108,11 @@
   }
 
   .swiper-slide h3 {
-    font-size: 1.5vh; /* Başlık boyutunu daha küçük yap */
+    font-size: 1.5vh; 
   }
 
   .swiper-pagination {
-    bottom: 1.5vh; /* Pagination'ı biraz daha yukarı al */
+    bottom: 1.5vh; 
   }
 
   .swiper-pagination-bullets {
@@ -134,13 +120,12 @@
   }
 }
 
-/* Tablet view responsive - Ekran genişliği 481px ile 768px arası için */
 @media (min-width: 481px) and (max-width: 900px) {
   .service-container {
     background-attachment: fixed;
   }
   .swiper {
-    width: 100%; /* Ekranda geniş görünmesini sağla */
+    width: 100%; 
   }
 
   .swiper-slide img {
@@ -149,7 +134,7 @@
   }
 
   .swiper-slide h3 {
-    font-size: 1.3vh; /* Başlık boyutunu küçük ekranlar için uygun yap */
+    font-size: 1.3vh; 
   }
 
   .swiper-pagination {

@@ -3,7 +3,7 @@ import './Aboutus.css';
 import team1 from '../assets/team1.jpg';
 
 const Aboutus = () => {
-  // Refs for the sections to observe
+
   const teamSectionRef = useRef(null);
   const aboutTextRef = useRef(null);
 
@@ -11,33 +11,32 @@ const Aboutus = () => {
     const teamSection = teamSectionRef.current;
     const aboutText = aboutTextRef.current;
 
-    // Intersection Observer options
     const observerOptions = {
-      root: null, // Observe within the viewport
-      threshold: 0.3, // Trigger when 30% of the element is visible
+      root: null, 
+      threshold: 0.3, 
     };
 
-    // Intersection Observer callback
+   
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           if (entry.target === teamSection) {
-            entry.target.classList.add('visible-team'); // Add animation class for team section
+            entry.target.classList.add('visible-team'); 
           } else if (entry.target === aboutText) {
-            entry.target.classList.add('visible-about'); // Add animation class for about text
+            entry.target.classList.add('visible-about');
           }
-          observer.unobserve(entry.target); // Stop observing after it appears
+          observer.unobserve(entry.target);
         }
       });
     };
 
-    // Create and apply the observer
+    
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     if (teamSection) observer.observe(teamSection);
     if (aboutText) observer.observe(aboutText);
 
-    // Cleanup observer on component unmount
+   
     return () => {
       if (teamSection) observer.unobserve(teamSection);
       if (aboutText) observer.unobserve(aboutText);
@@ -47,7 +46,6 @@ const Aboutus = () => {
   return (
     <section id="ankara-avukat-hakkimizda" className="aboutus">
       <div className="aboutus-content">
-        {/* Founder Section */}
         <div ref={teamSectionRef} className="team-section">
           <h2 className="founder-title">Kurucumuz</h2>
           <div className="team-member">
@@ -57,7 +55,7 @@ const Aboutus = () => {
           </div>
         </div>
 
-        {/* About Us Section */}
+    
         <div ref={aboutTextRef} className="about-text">
           <h2>Hakkımızda</h2>
           <p>

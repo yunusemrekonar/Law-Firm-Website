@@ -3,17 +3,15 @@ import './Contactus.css';
 import emailjs from 'emailjs-com';
 
 const Contactus = () => {
-  // Form verilerini tutmak için useState kullanıyoruz
   const [formData, setFormData] = useState({
     name: '',
     surname: '',
     phone: '',
     email: '',
     message: '',
-    honeypot: '' // Honeypot alanı ekliyoruz
+    honeypot: '' 
   });
 
-  // Form verilerini güncelleyen fonksiyon
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -22,11 +20,9 @@ const Contactus = () => {
     });
   };
 
-  // Form gönderildiğinde çalışacak fonksiyon
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Eğer honeypot alanı dolmuşsa, formu spam olarak işaretle
     if (formData.honeypot) {
       alert("Formunuz spam olarak işaretlendi.");
       return;
@@ -41,17 +37,15 @@ const Contactus = () => {
       alert('Form gönderilemedi. Lütfen tekrar deneyin.');
     });
 
-    // Form verilerini gönderme işlemi
     console.log("Form submitted:", formData);
 
-    // Formu sıfırlıyoruz
     setFormData({
       name: '',
       surname: '',
       phone: '',
       email: '',
       message: '',
-      honeypot: '' // Honeypot alanını sıfırlıyoruz
+      honeypot: '' 
     });
 
     alert('Form başarıyla gönderildi!');
@@ -110,11 +104,10 @@ const Contactus = () => {
           required
         ></textarea>
 
-        {/* Honeypot alanı gizli tutulacak */}
         <input
           type="text"
           name="honeypot"
-          style={{ display: 'none' }} // Bu alan gizli olmalı
+          style={{ display: 'none' }} 
           value={formData.honeypot}
           onChange={handleChange}
         />

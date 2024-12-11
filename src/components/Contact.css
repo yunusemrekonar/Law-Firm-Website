@@ -1,5 +1,5 @@
 .contact {
-  /*background-image: url("../assets/services-background.jpg"); */
+
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,15 +22,12 @@
   margin-top: 2vh;
 }
 
-
 .contact-logopart img {
   width: 30vh; 
   height: auto; 
   margin-top: 10vh;
 }
 
-
-/* Contact Information Section */
 .contact .contact-info {
   flex: 1;
   padding: 2vh;
@@ -66,7 +63,7 @@
   font-size: 4vh;       
 }
 
-/* Contact Form Section */
+
 .contact .contact-form {
   flex: 1;
   padding: 2vh;
@@ -126,7 +123,6 @@
   transform: scale(1.05); 
 }
 
-/* Google Maps Section */
 .contact .google-maps {
   display: flex;
   flex-direction: column;
@@ -139,7 +135,7 @@
   flex: 1;
   border-radius: 1vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2vh;  /* Haritanın altına boşluk ekler */
+  margin-bottom: 2vh;  
 }
 
 .google-maps h2 {
@@ -150,10 +146,10 @@
   text-align: center;        
   margin-bottom: 2vh;       
   font-family: 'Roboto', sans-serif; 
-  border-bottom: 2px solid #e0a96d; /* Alt çizgi */
+  border-bottom: 2px solid #e0a96d; 
   padding-bottom: 0.5vh;
-  width: 100%;               /* Genişliği %100 yap */
-  justify-content: center;   /* Metni ortala */
+  width: 100%;               
+  justify-content: center;   
 }
 .contact .google-maps iframe {
   width: 100%;
@@ -161,7 +157,6 @@
   border: none;
 }
 
-/* Mobile View Styles */
 @media (max-width: 768px) {
   .contact .contact-logopart img {
     width: 20vh; 
@@ -213,7 +208,6 @@
   }
 }
 
-/* Tablet View (Between 768px - 950px) */
 @media (max-width: 950px) {
   .contact {
     flex-direction: column; 

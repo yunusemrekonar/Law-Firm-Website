@@ -1,9 +1,9 @@
 .footer {
-    height: auto; /* Allow height to adapt based on content */
+    height: auto; 
     padding: 2vh 4vh;
     display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    align-items: center; 
+    justify-content: center; 
     text-align: center;
     background-color: #111;
     color: #fff;
@@ -13,53 +13,50 @@
 
 .footer p {
     margin: 0;
-    font-size: 0.7rem; /* Balanced text size for readability */
+    font-size: 0.7rem; 
 }
 
 .footer a {
-    color: #f0a500; /* Elegant golden accent */
-    text-decoration: none; /* Remove underline for a cleaner look */
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    color: #f0a500; 
+    text-decoration: none; 
+    transition: color 0.3s ease-in-out; 
 }
 
 .footer a:hover {
-    color: #fff; /* Highlight links on hover */
+    color: #fff; 
 }
 
-/* Mobile View (max-width: 768px) */
 @media (max-width: 768px) {
     .footer {
-        padding: 1.5vh 2vh; /* Adjust padding for smaller screens */
+        padding: 1.5vh 2vh; 
         text-align: center;
-        font-size: 0.8rem; /* Slightly smaller text for mobile */
-        height: auto; /* Allow height to adapt based on content */
+        font-size: 0.8rem; 
+        height: auto; 
     }
 
     .footer p {
-        font-size: 0.9rem; /* Adjust paragraph font size for mobile */
+        font-size: 0.9rem; 
     }
 }
 
-/* Tablet View (max-width: 1200px) */
 @media (max-width: 1200px) {
     .footer {
-        padding: 3vh 6vh; /* Scaled padding for medium screens */
+        padding: 3vh 6vh; 
     }
 
     .footer p {
-        font-size: 1rem; /* Maintain consistency across devices */
+        font-size: 1rem; 
     }
 }
 
-/* Extra Small Screens (max-width: 480px) */
 @media (max-width: 480px) {
     .footer {
-        padding: 1vh 1.5vh; /* Adjust padding for very small screens */
-        font-size: 0.75rem; /* Smaller font size for very small screens */
-        text-align: center; /* Center the content */
+        padding: 1vh 1.5vh; 
+        font-size: 0.75rem; 
+        text-align: center; 
     }
 
     .footer p {
-        font-size: 0.85rem; /* Adjust paragraph font size for very small screens */
+        font-size: 0.85rem;
     }
 }

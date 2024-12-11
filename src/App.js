@@ -15,7 +15,6 @@ function App() {
   return (
 
       <div className="App">
-        {/* WhatsApp Floating Button */}
         <FloatingWhatsApp
           phoneNumber="+90 506 835 18 93" 
           chatMessage="Merhaba, size nasıl yardımcı olabiliriz?" 
@@ -26,14 +25,12 @@ function App() {
           notification
         />
 
-        {/* Meta & Title */}
         <Helmet>
           <meta name="description" content="Ankara Konar Hukuk ve Danışmanlık olarak, hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlası için bize başvurun." />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Ankara Konar Hukuk & Danışmanlık</title>
         </Helmet>
 
-        {/* Navigation Bar */}
         <Navbar />
         <Home />
         <Aboutus />
@@ -41,6 +38,7 @@ function App() {
         <Blogs />
         <Contact />
         <Footer />
+        
       </div>
  
   );

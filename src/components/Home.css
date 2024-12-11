@@ -29,37 +29,34 @@
 */
 .home h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 3vh; /* Font boyutu ekran genişliğine orantılı */
-    color: #333; /* Yazı rengi */
+    font-size: 3vh; 
+    color: #333; 
     text-align: center;
 }
 
-/* Küçük ekranlar (max-width: 480px) */
 @media (max-width: 480px) {
     .home {
-        background-image: url("../assets/mobil-background.png"); /* Mobil için arka plan resmi */
+        background-image: url("../assets/mobil-background.png"); 
         background-size: cover;
     }
 
     .home h2 {
-        font-size: 2vh; /* Daha büyük font boyutu */
+        font-size: 2vh; 
     }
 }
 
-/* Orta küçük ekranlar (max-width: 768px) */
 @media (max-width: 768px) {
     .home {
-        height: 60vh; /* Yükseklik biraz azaltılır */
-        background-image: url("../assets/mobil-background.png"); /* Mobil için arka plan resmi */
-        padding: 7vw; /* Kenarlar için yeterli boşluk */
+        height: 60vh; 
+        background-image: url("../assets/mobil-background.png"); 
+        padding: 7vw; 
     }
 
     .home h2 {
-        font-size: 2vh; /* Orta ekran için font boyutu */
+        font-size: 2vh; 
     }
 }
 
-/* Orta büyüklükteki ekranlar (768px - 1200px arası) */
 @media (min-width: 769px) and (max-width: 1200px) {
     .home {
         height: 100vh;
@@ -76,7 +73,6 @@
     }
 }
 
-/* Büyük ekranlar (1200px ve üzeri) */
 @media (min-width: 1200px) {
     .home {
         height: 70vh;

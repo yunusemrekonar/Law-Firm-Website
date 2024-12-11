@@ -3,30 +3,28 @@ import "./Navbar.css";
 import logo from "../assets/law-logo.png";
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu toggle
-  const [sidebarVisible, setSidebarVisible] = useState(false); // State for sidebar visibility
+  const [menuOpen, setMenuOpen] = useState(false); 
+  const [sidebarVisible, setSidebarVisible] = useState(false); 
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Toggle the mobile menu open/close
+    setMenuOpen(!menuOpen); 
   };
 
   const showSidebar = () => {
-    setSidebarVisible(true); // Show the sidebar
+    setSidebarVisible(true); 
   };
 
   const hideSidebar = () => {
-    setSidebarVisible(false); // Hide the sidebar
+    setSidebarVisible(false); 
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo Section */}
         <div className="logopart">
           <img src={logo} alt="Logo" className="navbar-logo" />
         </div>
 
-        {/* Navigation Links */}
         <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
           <li>
             <a href="#ankara-avukat-ana-sayfa">Ana Sayfa</a>
@@ -45,7 +43,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Mobile Menu Icon */}
         <button className="menu-icon" onClick={toggleMenu} aria-label="Toggle menu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,12 +54,10 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Sidebar Toggle Button */}
         <button className="sidebar-toggle" onClick={showSidebar} aria-label="Open sidebar">
-          <span></span> {/* Optional: Hamburger icon for the sidebar */}
+          <span></span>
         </button>
 
-        {/* Sidebar */}
         {sidebarVisible && (
           <div className="sidebar">
             <button className="sidebar-close" onClick={hideSidebar} aria-label="Close sidebar">
