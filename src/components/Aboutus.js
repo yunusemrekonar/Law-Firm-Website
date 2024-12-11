@@ -45,7 +45,7 @@ const Aboutus = () => {
   }, []);
 
   return (
-    <section id="aboutus" className="aboutus">
+    <section id="ankara-avukat-hakkimizda" className="aboutus">
       <div className="aboutus-content">
         {/* Founder Section */}
         <div ref={teamSectionRef} className="team-section">

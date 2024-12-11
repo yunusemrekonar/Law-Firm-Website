@@ -52,7 +52,7 @@ const Services = () => {
       >
         {services.map((service, index) => (
           <SwiperSlide key={index}>
-            <div id='services' className="services">
+            <div id='ankara-avukat-calisma-alanlarimiz' className="services">
               <img src={service.image} alt={service.title} />
               <h3>{service.title}</h3>
             </div>

@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <section id="home" className="home">
+    <section id="ankara-avukat-ana-sayfa" className="home">
    
   {/*   <p className='home1'>Konar Hukuk & Danışmanlık Olarak,</p>*/}
   {/* <p className='home2'><strong>Adaleti Savunma Yolunda Her Adımda Yanınızdayız</strong></p>*/}

@@ -7,7 +7,7 @@ import logo from "../assets/law-logo.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact">
+    <section id="ankara-avukat-iletisim" className="contact">
       
       <div className="contact-info">
         <h2>İletişim Bilgileri</h2>

@@ -6,15 +6,15 @@
 }
 
 :target {
-  scroll-margin-top: 17vh;
+  scroll-margin-top: 20vh;
 }
 
 .navbar-container {
-  overflow: visible; /* Bu, sticky navbar'ı engellemeyi önler */
+  overflow: visible; 
 }
 .navbar {
   position: sticky;
-  top: 0; /* Navbar'ın sayfanın üst kısmına yapışması için */
+  top: 0; 
 }
 
 /* Navbar */
@@ -22,7 +22,7 @@
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-between; /* Sol ve sağ öğeleri ayırmak için space-between kullanılıyor */
+  justify-content: space-between; 
   align-items: center; 
   padding: 1vh 2vh;
   position: sticky;
@@ -86,19 +86,19 @@
   z-index: 20;
 }
 
-/* Mobile Menu Icon */
+
 .menu-icon {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Başlangıçta gizli */
+  display: none; 
 }
 
 .menu-icon svg {
   fill: black;
 }
 
-/* Sidebar */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -149,9 +149,7 @@
   background-color: #e0a96d;
 }
 
-/* Responsive Design */
 
-/* For screens smaller than 800px */
 @media (max-width: 800px) {
   .navbar-links {
     display: none;
@@ -165,7 +163,7 @@
     display: flex;
   }
 
-  /* Sidebar visibility on smaller screens */
+ 
   .sidebar {
     width: 100%;
   }
@@ -178,13 +176,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto; /* Flex düzeninde sağa yaslar */
+    margin-left: auto; 
     padding: 1vh;
     cursor: pointer;
 }
 }
 
-/* For screens between 800px and 450px */
+
 @media (min-width: 800px) {
   .sidebar-toggle {
     display: none;
@@ -196,7 +194,7 @@
   
 }
 
-/* For screens smaller than 450px */
+
 @media (max-width: 500px) {
   .navbar-container .logopart .navbar-logo {
     width: 20vh ;
@@ -226,7 +224,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: auto; /* Flex düzeninde sağa yaslar */
+    margin-left: auto; 
     padding: 1vh;
     cursor: pointer;
 }

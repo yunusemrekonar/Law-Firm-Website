@@ -29,19 +29,19 @@ const Navbar = () => {
         {/* Navigation Links */}
         <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
           <li>
-            <a href="#home">Ana Sayfa</a>
+            <a href="#ankara-avukat-ana-sayfa">Ana Sayfa</a>
           </li>
           <li>
-            <a href="#aboutus">Hakkımızda</a>
+            <a href="#ankara-avukat-hakkimizda">Hakkımızda</a>
           </li>
           <li>
-            <a href="#services">Çalışma Alanlarımız</a>
+            <a href="#ankara-avukat-calisma-alanlarimiz">Çalışma Alanlarımız</a>
           </li>
           <li>
-            <a href="#blogs">Makaleler</a>
+            <a href="#ankara-avukat-hukuki-makaleler">Makaleler</a>
           </li>
           <li>
-            <a href="#contact">İletişim</a>
+            <a href="#ankara-avukat-iletisim">İletişim</a>
           </li>
         </ul>
 

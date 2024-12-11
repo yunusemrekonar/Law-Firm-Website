@@ -65,7 +65,7 @@ export default function MultiActionAreaCard() {
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Hafif bir gölge
       }}
     >   
-      <h2 
+      <h2 id='ankara-avukat-hukuki-makaleler' className='blogs'
         style={{
           position: 'relative', // Üstte ve ortada konumlandırmak için
           left: '50%',

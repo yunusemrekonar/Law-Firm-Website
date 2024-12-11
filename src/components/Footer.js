@@ -3,7 +3,7 @@ import "./Footer.css"
 
 const Footer = () => {
   return (
-      <footer className='footer'>
+      <footer id='ankara-avukat' className='footer'>
         <p>Bu web sitesi ve içindeki bilgiler, Türkiye Barolar Birliği'nin Meslek Kurallarına ve Avukatlık Reklam Yasağı Yönetmeliği'ne uygun şekilde tasarlanmıştır.
        <p></p> Her hakkı saklıdır. Konar Hukuk & Danışmanlık, Ankara, Çankaya</p>
       </footer>
