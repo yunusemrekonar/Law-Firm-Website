@@ -16,7 +16,7 @@
 
 .home h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 4vw; /* Font boyutu ekran genişliğine orantılı */
+    font-size: 3vh; /* Font boyutu ekran genişliğine orantılı */
     color: #333; /* Yazı rengi */
     text-align: center;
 }
@@ -29,7 +29,7 @@
     }
 
     .home h2 {
-        font-size: 8vw; /* Daha büyük font boyutu */
+        font-size: 2vh; /* Daha büyük font boyutu */
     }
 }
 
@@ -42,7 +42,7 @@
     }
 
     .home h2 {
-        font-size: 6vw; /* Orta ekran için font boyutu */
+        font-size: 2vh; /* Orta ekran için font boyutu */
     }
 }
 
@@ -59,7 +59,7 @@
     }
 
     .home h2 {
-        font-size: 5vw;
+        font-size: 2vh;
     }
 }
 
@@ -73,6 +73,6 @@
     }
 
     .home h2 {
-        font-size: 3vw;
+        font-size: 2vh;
     }
 }

@@ -37,14 +37,20 @@
   transform: translateX(100%); 
 }
 
-.team-section h2 {
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 2vh;
-  font-size: 2.4vh;
-  color: black;
-  border-bottom: 2px solid #e0a96d;
-  padding-bottom: 0.5vh;
+
+.founder-title {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #333;
   text-align: center;
+  margin-bottom: 2vh;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 2px solid #e0a96d; /* Alt çizgi */
+  padding-bottom: 0.5vh;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
 }
 
 .team-section.visible-team{
@@ -90,7 +96,7 @@
   text-align: center;
   border-bottom: 2px solid #e0a96d;
   margin-bottom: 2vh;
-  font-size: 2.4vh;
+  font-size: 3vh;
   color:black;
   padding-bottom: 0.5vh;
 }
@@ -130,13 +136,27 @@
   }
 
   .team-member h3 {
-    font-size: 1.6vh;
+    font-size: 1.8vh;
   }
 
   .team-member p {
     font-size: 1.2vh;
   }
 
+  .founder-title {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #e0a96d; /* Alt çizgi */
+    padding-bottom: 0.5vh;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+  }
   .about-text h2 {
     font-size: 2vh;
   }
@@ -165,22 +185,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: flex; /* Flexbox kullanarak içeriği düzenleyin */
-    text-align: center; /* Başlık ve metinlerin ortalanmasını sağlar */
+    display: flex; 
+    text-align: center; 
   }
 
-  .team-section h2 {
-    font-size: 1.8vh;
+  .founder-title {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #e0a96d; /* Alt çizgi */
+    padding-bottom: 0.5vh;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
   }
 
   .team-member {
-    height: auto; /* Sabit yükseklik yerine içeriğe göre otomatik ayar */
+    height: auto; 
     width: auto;
-    display: flex; /* Flexbox kullanarak içeriği hizalayın */
+    display: flex; 
     flex-direction: column;
-    justify-content: center; /* Yatayda ortalama */
-    align-items: center; /* Dikeyde ortalama */
-    margin: 0 auto; /* Ortalamak için margin */
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto; 
   }
 
   .team-member img {
@@ -191,7 +222,7 @@
   }
 
   .team-member h3 {
-    font-size: 2vh;
+    font-size: 1.8vh;
   }
 
   .team-member p {
@@ -238,10 +269,20 @@
     text-align: left; /* Bu, metni genel olarak sola hizalar */
   }
 
-  .team-section h2 {
+
+  .founder-title {
     font-size: 2vh;
-    text-align: left; /* Başlığı sola hizalar */
-    width: 100%; /* Genişliği tam yaparak hizalamayı sağlıklı hale getirir */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #e0a96d; /* Alt çizgi */
+    padding-bottom: 0.5vh;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
   }
 
   .team-member {

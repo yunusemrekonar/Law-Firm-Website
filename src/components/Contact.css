@@ -38,8 +38,8 @@
 }
 
 .contact .contact-info h2 {
-  margin-bottom: 1.5vh;
-  font-size: 2.4vh;
+  margin-bottom: 2vh;
+  font-size: 3vh;
   color: black;
   border-bottom: 2px solid #e0a96d; 
   padding-bottom: 0.5vh;
@@ -74,8 +74,8 @@
 }
 
 .contact .contact-form h2 {
-  margin-bottom: 1.5vh;
-  font-size: 2.4vh;
+  margin-bottom: 2vh;
+  font-size: 3vh;
   color: black;
   border-bottom: 2px solid #e0a96d; 
   padding-bottom: 0.5vh;
@@ -126,6 +126,8 @@
 .contact .google-maps {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1.5vh;
   height: 70vh;
   width: auto;
@@ -133,23 +135,22 @@
   flex: 1;
   border-radius: 1vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  align-items: center;
-  justify-content: center;
   margin-bottom: 2vh;  /* Haritanın altına boşluk ekler */
 }
 
 .google-maps h2 {
   display: flex;
-  font-size: 2.4vh;           
+  font-size: 3vh;           
   font-weight: bold;         
   color: #333;               
   text-align: center;        
   margin-bottom: 2vh;       
   font-family: 'Roboto', sans-serif; 
-  border-bottom: 2px solid #e0a96d;
+  border-bottom: 2px solid #e0a96d; /* Alt çizgi */
   padding-bottom: 0.5vh;
+  width: 100%;               /* Genişliği %100 yap */
+  justify-content: center;   /* Metni ortala */
 }
-
 .contact .google-maps iframe {
   width: 100%;
   height: 100%;
@@ -183,7 +184,7 @@
     font-size: 1rem;
   }
   .contact .contact-info h2{
-  font-size: 1.3rem;
+  font-size: 2vh;
   }
   .contact .contact-info p{
     font-size: 1.3rem;
@@ -193,7 +194,7 @@
   }
 
   .contact .contact-form h2{
-    font-size: 1.3rem;
+    font-size: 2vh;
 
   }
   .contact .contact-form input{

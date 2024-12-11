@@ -7,7 +7,7 @@
 }
 
 .contactus h2 {
-  font-size: 2em;
+  font-size: 3vh;
   margin-bottom: 3vh;
 }
 
@@ -55,7 +55,7 @@
   }
 
   .contactus h2 {
-    font-size: 1.5em; /* Adjust title size for smaller screens */
+    font-size: 2vh; /* Adjust title size for smaller screens */
   }
 
   .contact-form {
@@ -84,7 +84,7 @@
   }
 
   .contactus h2 {
-    font-size: 1.2em; /* Decrease header size for smaller screens */
+    font-size: 2vh; /* Decrease header size for smaller screens */
   }
 
   .contact-form {
