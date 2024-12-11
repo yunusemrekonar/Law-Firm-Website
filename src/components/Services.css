@@ -99,13 +99,13 @@
 
 /* Sol ok (Prev button) için pozisyon */
 .swiper-button-prev {
-  color: white;
+  color: black;
 
 }
 
 /* Sağ ok (Next button) için pozisyon */
 .swiper-button-next {
-  color:white;
+  color:black;
 
 }
 
@@ -119,7 +119,8 @@
   }
 
   .swiper-slide img {
-    height: 30vh; /* Resmin yüksekliğini küçük ekranlar için daha küçük yap */
+    height: 34vh;
+    width: auto; 
   }
 
   .swiper-slide h3 {
@@ -145,7 +146,8 @@
   }
 
   .swiper-slide img {
-    height: 33.5vh; /* Resmin yüksekliğini küçük ekranlar için uygun yap */
+    height: 34vh; 
+    width: auto;
   }
 
   .swiper-slide h3 {

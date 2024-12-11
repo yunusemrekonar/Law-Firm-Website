@@ -12,28 +12,28 @@ const Aboutus = () => {
     const aboutText = aboutTextRef.current;
 
     // Intersection Observer options
-    const options = {
-      root: null, // Viewport
-      threshold: 0.5, // Trigger when 50% of the element is visible
+    const observerOptions = {
+      root: null, // Observe within the viewport
+      threshold: 0.3, // Trigger when 30% of the element is visible
     };
 
-    // Create observer
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
+    // Intersection Observer callback
+    const observerCallback = (entries, observer) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Add the class to trigger the animation when visible
           if (entry.target === teamSection) {
-            teamSection.classList.add('visible-team');
-          }
-          if (entry.target === aboutText) {
-            aboutText.classList.add('visible-about');
+            entry.target.classList.add('visible-team'); // Add animation class for team section
+          } else if (entry.target === aboutText) {
+            entry.target.classList.add('visible-about'); // Add animation class for about text
           }
           observer.unobserve(entry.target); // Stop observing after it appears
         }
       });
-    }, options);
+    };
 
-    // Start observing the sections
+    // Create and apply the observer
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
     if (teamSection) observer.observe(teamSection);
     if (aboutText) observer.observe(aboutText);
 
@@ -47,15 +47,17 @@ const Aboutus = () => {
   return (
     <section id="aboutus" className="aboutus">
       <div className="aboutus-content">
+        {/* Founder Section */}
         <div ref={teamSectionRef} className="team-section">
-          <h2 className='founder-title'>Kurucumuz</h2>
+          <h2 className="founder-title">Kurucumuz</h2>
           <div className="team-member">
             <img src={team1} alt="Avukat Ayşenur Konar" />
-            <h3>Av.Ayşenur Konar</h3>
+            <h3>Av. Ayşenur Konar</h3>
             <p>Ankara Barosu - 37181</p>
           </div>
         </div>
 
+        {/* About Us Section */}
         <div ref={aboutTextRef} className="about-text">
           <h2>Hakkımızda</h2>
           <p>

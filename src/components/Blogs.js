@@ -52,6 +52,7 @@ export default function MultiActionAreaCard() {
   return (
     <div 
       style={{
+        position: 'relative', // Başlığın tam ortalanması için gerekli
         display: 'flex', 
         flexWrap: 'wrap', 
         justifyContent: 'space-between',
@@ -63,7 +64,27 @@ export default function MultiActionAreaCard() {
         borderRadius: '10px',   // Container'a yuvarlak köşe
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Hafif bir gölge
       }}
-    >
+    >   
+      <h2 
+        style={{
+          position: 'relative', // Üstte ve ortada konumlandırmak için
+          left: '50%',
+          transform: 'translateX(-50%)', // Ortalamak için
+          zIndex: 10, 
+          color: 'black', 
+          marginTop: '-1vh',
+          marginBottom: '1vh', 
+          paddingBottom: '0.5vh',
+          borderBottom: '2px solid #e0a96d',
+          padding: '10px 20px', 
+          fontSize: '3vh',
+          width: '100%', // Alt çizgi tam genişlikte
+          textAlign: 'center', // Yazıyı ortalamak için
+        }}
+      >
+        Hukuki Makaleler
+      </h2>
+
       {blogData.map(blog => (
         <StyledCard key={blog.id}>
           <CardActionArea>
