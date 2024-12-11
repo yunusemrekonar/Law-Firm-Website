@@ -174,7 +174,8 @@
     align-items: center;
   }
   .contact {
-    flex-direction: column; 
+    flex-direction: column;
+    background-attachment: fixed; 
     gap: 2vh; 
     padding: 2vh; 
     
@@ -216,6 +217,7 @@
 @media (max-width: 950px) {
   .contact {
     flex-direction: column; 
+    background-attachment: fixed;
     align-items: stretch;
     gap: 2vh; 
     padding: 2vh; 
