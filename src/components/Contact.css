@@ -1,4 +1,8 @@
 .contact {
+  background-image: url("../assets/services-background.jpg"); 
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;

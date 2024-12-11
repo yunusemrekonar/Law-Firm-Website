@@ -19,7 +19,7 @@
   align-items: flex-start;
   justify-content: space-between;
   text-align: justify;
-  font-size: 14vh;
+  font-size: 15vh;
 }
 
 .team-section, .about-text {
@@ -88,7 +88,7 @@
   padding: 2vh;
   border-radius: 0.8vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 54.5vh;
+  height: 56.3vh;
   transform: translateX(-100%); 
 }
 
@@ -102,7 +102,7 @@
 }
 
 .about-text p {
-  font-size: 1.9vh;
+  font-size: 2vh;
   color: black;
   line-height: 1.6;
 }

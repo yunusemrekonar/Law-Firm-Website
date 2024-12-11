@@ -11,6 +11,7 @@ import { styled } from '@mui/material/styles';
 const StyledCard = styled(Card)(({ theme }) => ({
   flex: '1 1 250px', // Kart genişliği dinamik, ekran boyutuna göre değişir
   maxWidth: 600,
+  height: '50vh', // Kartın yüksekliğini vh ile ayarlıyoruz
   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   borderRadius: '10px',
   overflow: 'hidden',
@@ -27,7 +28,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 const StyledMedia = styled(CardMedia)({
-  height: 200, // Kartlar daha büyük olacak
+  height: '30vh', // Kartın medya kısmının yüksekliği vh ile ayarlandı
   objectFit: 'cover',
 });
 
@@ -39,6 +40,7 @@ const StyledButton = styled(Button)({
   },
 });
 
+// Blog verilerini içeren dizi
 const blogData = [
   { id: 1, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile hukuku ile ilgili temel bilgiler." },
   { id: 2, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza hukuku ve dava süreçleri hakkında detaylar." },
@@ -48,7 +50,20 @@ const blogData = [
 
 export default function MultiActionAreaCard() {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', gap: '1vh' }}>
+    <div 
+      style={{
+        display: 'flex', 
+        flexWrap: 'wrap', 
+        justifyContent: 'space-between',
+        alignItems: 'center', 
+        gap: '1vh',
+        background: '#f0f0f0', // Container arka plan rengi
+        minHeight: '60vh',     // Yüksekliği tam ekran yapmak için
+        padding: '2vh',         // İçerideki kartlara biraz boşluk ekliyoruz
+        borderRadius: '10px',   // Container'a yuvarlak köşe
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',  // Hafif bir gölge
+      }}
+    >
       {blogData.map(blog => (
         <StyledCard key={blog.id}>
           <CardActionArea>
@@ -57,11 +72,11 @@ export default function MultiActionAreaCard() {
               image={blog.image}
               alt={blog.title}
             />
-            <CardContent>
+            <CardContent style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
               <Typography gutterBottom variant="h5" style={{ fontWeight: 'bold', color: '#2c3e50' }}>
                 {blog.title}
               </Typography>
-              <Typography variant="body2" style={{ color: '#7f8c8d' }}>
+              <Typography variant="body2" style={{ color: '#7f8c8d', flexGrow: 1 }}>
                 {blog.description}
               </Typography>
             </CardContent>
