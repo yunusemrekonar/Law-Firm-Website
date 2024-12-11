@@ -95,6 +95,9 @@
 }
 
 @media (max-width: 480px) {
+  .service-container h2{
+    font-size: 2vh;
+  }
   .service-container {
     background-attachment: fixed;
   }
@@ -123,6 +126,9 @@
 @media (min-width: 481px) and (max-width: 900px) {
   .service-container {
     background-attachment: fixed;
+  }
+  .service-container h2{
+    font-size: 2vh;
   }
   .swiper {
     width: 100%; 

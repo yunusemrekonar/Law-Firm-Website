@@ -158,6 +158,9 @@
 }
 
 @media (max-width: 768px) {
+  .google-maps h2{
+    font-size: 2vh;
+  }
   .contact .contact-logopart img {
     width: 20vh; 
     display: flex;
@@ -209,6 +212,9 @@
 }
 
 @media (max-width: 950px) {
+  .google-maps h2{
+    font-size: 2vh;
+  }
   .contact {
     flex-direction: column; 
     background-attachment: fixed;

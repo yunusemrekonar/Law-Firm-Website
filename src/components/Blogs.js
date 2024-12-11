@@ -77,7 +77,7 @@ export default function MultiActionAreaCard() {
           paddingBottom: '0.5vh',
           borderBottom: '2px solid #e0a96d',
           padding: '10px 20px', 
-          fontSize: '3vh',
+          fontSize: '2vh',
           width: '100%', 
           textAlign: 'center', 
         }}
