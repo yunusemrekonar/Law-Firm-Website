@@ -47,13 +47,12 @@ const Aboutus = () => {
   return (
 <>
   <Helmet>
-    <title>Hakkimizda - Ankara Avukatlik</title>
     <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
-    <meta name="keywords" content="Ankara, avukatlik, danismanlik, hukuk, müvekkil memnuniyeti" />
+    <meta name="keywords" content="Ankara, avukat, danismanlik, hukuk, müvekkil memnuniyeti, ankara, çankaya" />
     <meta name="author" content="Avukat Ayşenur Konar" />
   </Helmet>
 
-    <section id="ankara-avukat-hakkimizda" className="aboutus">
+    <section id="ankara-avukat-hakkimizda-home" className="aboutus">
       <div className="aboutus-content">
         <div ref={teamSectionRef} className="team-section">
           <h2 className="founder-title">Kurucumuz</h2>

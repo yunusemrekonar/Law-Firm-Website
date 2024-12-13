@@ -1,16 +1,20 @@
 import React from 'react';
 import './Home.css';
-
+import { Helmet } from 'react-helmet';
 const Home = () => {
   return (
-    <section id="ankara-avukat-ana-sayfa" className="home">
-   
-  {/*   <p className='home1'>Konar Hukuk & Danışmanlık Olarak,</p>*/}
-  {/* <p className='home2'><strong>Adaleti Savunma Yolunda Her Adımda Yanınızdayız</strong></p>*/}
-  { /* <p className='home3'>Güven, çözüm ve başarıyı birlikte inşa ediyoruz.</p> */}
-     
-    </section>
-    
+    <>
+    <Helmet>
+            <title>Konar Hukuk & Danışmanlık | Avukat Ankara,Çankaya</title>
+            <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
+            <meta name="keywords" content="Ankara, avukatlik, danismanlik, hukuk, müvekkil haklari, Ankara avukat, Boşanma avukatı" />
+            <meta name="author" content="Avukat Ayşenur Konar" />
+          </Helmet>
+  <title>Konar Hukuk & Danismanlik - Ana Sayfa</title>
+  <section id="/" className="home">
+
+  </section>
+  </>
   );
 };
 

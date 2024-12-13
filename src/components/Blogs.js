@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,27 +9,28 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardActions from '@mui/material/CardActions';
 import { styled } from '@mui/material/styles';
 
+
 const StyledCard = styled(Card)(({ theme }) => ({
-  flex: '1 1 250px', 
+  flex: '1 1 250px',
   maxWidth: 600,
-  height: '50vh', 
+  height: '50vh',
   boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   borderRadius: '10px',
   overflow: 'hidden',
-  margin: '0.5vh', 
+  margin: '0.5vh',
   '&:hover': {
     boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)',
   },
-  [theme.breakpoints.down('md')]: { 
-    flexBasis: '48%', 
+  [theme.breakpoints.down('md')]: {
+    flexBasis: '48%',
   },
-  [theme.breakpoints.down('sm')]: { 
-    flexBasis: '100%', 
+  [theme.breakpoints.down('sm')]: {
+    flexBasis: '100%',
   },
 }));
 
 const StyledMedia = styled(CardMedia)({
-  height: '30vh', 
+  height: '30vh',
   objectFit: 'cover',
 });
 
@@ -40,50 +42,56 @@ const StyledButton = styled(Button)({
   },
 });
 
-
 const blogData = [
   { id: 1, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile hukuku ile ilgili temel bilgiler." },
   { id: 2, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza hukuku ve dava süreçleri hakkında detaylar." },
   { id: 3, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret hukuku ve şirket yönetimi." },
-  { id: 4, title: "Miras Hukuku", image: "/images/miras_hukuku.jpg", description: "Miras hukuku ve haklar." }
+  { id: 4, title: "Miras Hukuku", image: "/images/miras_hukuku.jpg", description: "Miras hukuku ve haklar." },
 ];
 
 export default function MultiActionAreaCard() {
   return (
-    <div 
+    <div
       style={{
-        position: 'relative', 
-        display: 'flex', 
-        flexWrap: 'wrap', 
+        backgroundColor: '#f4f4f4',
+        position: 'relative',
+        display: 'flex',
+        flexWrap: 'wrap',
         justifyContent: 'space-between',
-        alignItems: 'center', 
+        alignItems: 'center',
         gap: '1vh',
-        background: '#f0f0f0', 
-        minHeight: '60vh',     
-        padding: '2vh',         
-        borderRadius: '10px',   
+        background: '#f0f0f0',
+        minHeight: '60vh',
+        padding: '2vh',
+        borderRadius: '10px',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        fontFamily: 'Roboto, sans-serif',
       }}
-    >   
-      <h2 id='ankara-avukat-hukuki-makaleler' className='blogs'
+    >
+  
+      <h2
+        id='ankara-avukat-hukuki-makaleler'
+        className='blogs'
         style={{
           position: 'relative',
           left: '50%',
-          transform: 'translateX(-50%)', 
-          zIndex: 10, 
-          color: 'black', 
+          transform: 'translateX(-50%)',
+          zIndex: 10,
+          color: 'black',
           marginTop: '-1vh',
-          marginBottom: '1vh', 
+          marginBottom: '1vh',
           paddingBottom: '0.5vh',
           borderBottom: '2px solid #e0a96d',
-          padding: '10px 20px', 
-          fontSize: '2vh',
-          width: '100%', 
-          textAlign: 'center', 
+          fontFamily: 'Roboto, sans-serif',
+          padding: '10px 20px',
+          fontSize: '3vh',
+          width: '100%',
+          textAlign: 'center',
         }}
       >
-        Hukuki Makaleler
+        Son Yayınlanan Makaleler
       </h2>
+
 
       {blogData.map(blog => (
         <StyledCard key={blog.id}>
@@ -102,10 +110,30 @@ export default function MultiActionAreaCard() {
               </Typography>
             </CardContent>
           </CardActionArea>
-          <CardActions style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <StyledButton size="small">
-              Devamını Oku...
-            </StyledButton>
+          <CardActions style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Link to={`/blog/${blog.id}`} style={{ textDecoration: 'none' }}>
+              <StyledButton size="small">
+                Devamını Oku...
+              </StyledButton>
+            </Link>
+
+            <Link to="/ankara-avukat-tüm-makaleler" style={{ textDecoration: 'none', marginLeft: 'auto' }}>
+              <button
+                id="ankara-avukat-makalelere"
+                style={{
+                  color: 'black',
+                  padding: '5px 10px',
+                  fontSize: '0.9em',
+                  backgroundColor: 'transparent',
+                  border: '1px solid #e0a96d',
+                  borderRadius: '4px',
+                  cursor: 'pointer',
+                  fontFamily: 'Roboto, sans-serif',
+                }}
+              >
+                TÜM MAKALELER
+              </button>
+            </Link>
           </CardActions>
         </StyledCard>
       ))}

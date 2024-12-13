@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import "./Navbar.css";
 import logo from "../assets/law-logo.png";
-import { Helmet } from 'react-helmet'; 
+import { Helmet } from 'react-helmet';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,78 +11,76 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Sidebar link tıklama fonksiyonu
-  const handleLinkClick = (e) => {
-    e.preventDefault();  // Sayfa yenilenmesini engeller
-    setMenuOpen(false);   // Sidebar'ı kapat
-    window.location.href = e.target.href;  // Bağlantıya git
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  // Sayfanın en başına gitmek için kullanılan fonksiyon
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
   };
 
   return (
-<>
-    <Helmet>
-    <title>Ankara Avukat Çankaya | Hukuk Hizmetleri ve Danışmanlık</title>
-    <meta name="description" content="Ankara'da avukatlik hizmetleri ve hukuki danismanlik. Ceza, aile, iş, ticaret, miras ve daha birçok alanda profesyonel hizmetler." />
-    <meta name="keywords" content="Ankara avukat, Çankaya avukat, ceza hukuku, aile hukuku, iş hukuku, ticaret hukuku, Ankara hukuk danismani" />
-    <meta property="og:title" content="Ankara Avukat Çankaya | Hukuk Hizmetleri" />
-    <meta property="og:description" content="Ankara'da profesyonel avukatlik ve hukuk danismanlik hizmetleri. Ceza, aile, iş, ticaret, miras gibi birçok alanda çözümler sunuyoruz." />
-    <meta property="og:url" content="https://www.konarhukuk.com/" />
-    <meta property="og:image" content="https://www.konarhukuk.com/images/logo.png" />
-    </Helmet>
+    <>
+      <Helmet>
+        <title>Ankara Avukat Çankaya | Hukuk Hizmetleri ve Danışmanlık</title>
+        <meta name="description" content="Ankara'da avukatlık hizmetleri ve hukuki danışmanlık. Ceza, aile, iş, ticaret, miras ve daha birçok alanda profesyonel hizmetler." />
+        <meta name="keywords" content="Ankara avukat, Çankaya avukat, ceza hukuku, aile hukuku, iş hukuku, ticaret hukuku, Ankara hukuk danışmanı" />
+        <meta property="og:title" content="Ankara Avukat Çankaya | Hukuk Hizmetleri" />
+        <meta property="og:description" content="Ankara'da profesyonel avukatlık ve hukuk danışmanlık hizmetleri. Ceza, aile, iş, ticaret, miras gibi birçok alanda çözümler sunuyoruz." />
+        <meta property="og:url" content="https://www.konarhukuk.com/" />
+        <meta property="og:image" content="https://www.konarhukuk.com/images/logo.png" />
+      </Helmet>
 
+      <nav className="navbar">
+        <div className="navbar-container">
+          <div className="logopart">
+            <img src={logo} alt="Logo" className="navbar-logo" />
+          </div>
 
-    <nav className="navbar">
-      <div className="navbar-container">
-        <div className="logopart">
-          <img src={logo} alt="Logo" className="navbar-logo" />
-        </div>
+          <button className="menu-toggle" onClick={toggleMenu}>
+            ☰
+          </button>
 
-        {/* Hamburger Menü İkonu */}
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
+          <div className={`sidebar ${menuOpen ? "open" : ""}`}>
+            <ul>
+              <li>
+                <Link to="/" onClick={() => { closeMenu(); scrollToTop(); }}>Ana Sayfa</Link>
+              </li>
+              <li>
+                <Link to="/ankara-avukat-hakkimizda" onClick={() => { closeMenu(); scrollToTop(); }}>Hakkımızda</Link>
+              </li>
+              <li>
+                <Link to="/ankara-avukat-çalisma-alanlari" onClick={() => { closeMenu(); scrollToTop(); }}>Çalışma Alanlarımız</Link>
+              </li>
+              <li>
+                <Link to="/ankara-avukat-hukuki-makaleler" onClick={() => { closeMenu(); scrollToTop(); }}>Makaleler</Link>
+              </li>
+              <li>
+                <Link to="/ankara-avukat-iletişim-bilgileri" onClick={() => { closeMenu(); scrollToTop(); }}>İletişim</Link>
+              </li>
+            </ul>
+          </div>
 
-        {/* Sidebar */}
-        <div className={`sidebar ${menuOpen ? "open" : ""}`}>
-          <ul>
+          <ul className="navbar-links">
             <li>
-              <a href="#ankara-avukat-ana-sayfa" onClick={handleLinkClick}>Ana Sayfa</a>
+              <Link to="/" onClick={() => { closeMenu(); scrollToTop(); }}>Ana Sayfa</Link>
             </li>
             <li>
-              <a href="#ankara-avukat-hakkimizda" onClick={handleLinkClick}>Hakkımızda</a>
+              <Link to="/ankara-avukat-hakkimizda" onClick={() => { closeMenu(); scrollToTop(); }}>Hakkımızda</Link>
             </li>
             <li>
-              <a href="#ankara-avukat-calisma-alanlarimiz" onClick={handleLinkClick}>Çalışma Alanlarımız</a>
+              <Link to="/ankara-avukat-çalisma-alanlari" onClick={() => { closeMenu(); scrollToTop(); }}>Çalışma Alanlarımız</Link>
             </li>
             <li>
-              <a href="#ankara-avukat-hukuki-makaleler" onClick={handleLinkClick}>Makaleler</a>
+              <Link to="/ankara-avukat-tüm-makaleler" onClick={() => { closeMenu(); scrollToTop(); }}>Makaleler</Link>
             </li>
             <li>
-              <a href="#ankara-avukat-iletisim" onClick={handleLinkClick}>İletişim</a>
+              <Link to="/ankara-avukat-iletişim-bilgileri" onClick={() => { closeMenu(); scrollToTop(); }}>İletişim</Link>
             </li>
           </ul>
         </div>
-
-        {/* Navbar Links (Masaüstü için) */}
-        <ul className="navbar-links">
-          <li>
-            <a href="#ankara-avukat-ana-sayfa" onClick={handleLinkClick}>Ana Sayfa</a>
-          </li>
-          <li>
-            <a href="#ankara-avukat-hakkimizda" onClick={handleLinkClick}>Hakkımızda</a>
-          </li>
-          <li>
-            <a href="#ankara-avukat-calisma-alanlarimiz" onClick={handleLinkClick}>Çalışma Alanlarımız</a>
-          </li>
-          <li>
-            <a href="#ankara-avukat-hukuki-makaleler" onClick={handleLinkClick}>Makaleler</a>
-          </li>
-          <li>
-            <a href="#ankara-avukat-iletisim" onClick={handleLinkClick}>İletişim</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
     </>
   );
 };

@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
-import './Services.css';
-import { Pagination, Navigation } from 'swiper/modules';
-import { Helmet } from 'react-helmet'; 
+import React from 'react';
+import './ServicesDetail.css';
+import { Helmet } from 'react-helmet';
 
-const Services = () => {
-  const [swiperRef, setSwiperRef] = useState(null);
+const CustomCard = ({ image, title, alt }) => {
+  return (
+   
+    <div className="custom-card">
+      <img src={image} alt={alt} />
+      <h3>{title}</h3>
+    </div>
+  );
+  };
 
-  const services = [
+const ServicesDetail = () => {
+  const servicesdetailed = [
     { title: "Ceza Hukuku Hizmeti", image: "images/ceza_hukuku.jpg", alt: "Ankara Ceza hukuku avukati - Savunma ve sucluluk durumlari" },
     { title: "Aile Hukuku Hizmeti", image: "images/aile_hukuku.jpg", alt: "Ankara Aile hukuku avukati - Bosanma, velayet, nafaka" },
     { title: "İş Hukuku Hizmeti", image: "images/is_hukuku.jpg", alt: "Ankara Is hukuku avukati - Calisan haklari ve is sozlesmeleri" },
@@ -26,48 +31,29 @@ const Services = () => {
   return (
     <>
     <Helmet>
-        <meta name="description" content="Konar Hukuk & Danismanlik olarak, ceza, aile, iş, ticaret, icra, gayrimenkul ve daha birçok alanda uzmanlaşmis avukatlik hizmetleri sunuyoruz." />
-        <meta name="keywords" content="ceza hukuku, aile hukuku, iş hukuku, ticaret hukuku, icra ve iflas hukuku, gayrimenkul hukuku, vergi hukuku, miras hukuku, saglik hukuku, fikri mülkiyet hukuku, uluslararasi hukuk, avukatlik hizmetleri" />
-        <meta name="author" content="Avukat Ayşenur Konar" />
-      </Helmet>
-    <div className='service-container'>
-      <h2>Çalışma Alanlarımız</h2>
-      <Swiper
-        onSwiper={setSwiperRef}
-        centeredSlides={true}
-        spaceBetween={20}
-        pagination={{
-          type: 'bullets',
-          clickable: true,
-        }}
-        navigation={true}
-        loop={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-        breakpoints={{
-          1024: {
-            slidesPerView: 3,  
-          },
-          768: {
-            slidesPerView: 2,  
-          },
-          480: {
-            slidesPerView: 1,  
-          },
-        }}
-      >
-        {services.map((service, index) => (
-          <SwiperSlide key={index}>
-            <div id='ankara-avukat-calisma-alanlarimiz' className="services">
-              <img src={service.image} alt={service.title} />
-              <h3>{service.title}</h3>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      </div>
-    </>
+            <title>Çalışma Alanlarımız - Ankara Avukat</title>
+            <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
+            <meta name="keywords" content="Ankara, avukatlik, danismanlik, hukuk, müvekkil memnuniyeti" />
+            <meta name="author" content="Avukat Ayşenur Konar" />
+          </Helmet>
     
+    <div id='ankara-avukat-çalisma-alanlari' className='service-detailed-container'>
+      <h2>Çalışma Alanlarımız</h2>
+      {servicesdetailed.map((service, index) => (
+        <CustomCard
+          key={index}
+          image={service.image}
+          title={service.title}
+          alt={service.alt}
+        />
+        
+      ))}
+      
+    </div>
+    </>
+
   );
-}
-export default Services;
+  
+};
+
+export default ServicesDetail;

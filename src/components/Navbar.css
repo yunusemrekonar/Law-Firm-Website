@@ -1,3 +1,4 @@
+/* Genel Stil Ayarları */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +7,15 @@
 }
 
 :target {
-  scroll-margin-top: 20vh;
+  scroll-margin-top: 30vh;
 }
 
+/* Navbar Konteyner */
 .navbar-container {
   overflow: visible;
 }
 
+/* Navbar Stil */
 .navbar {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -26,6 +29,7 @@
   height: 12vh;
 }
 
+/* Navbar Konteyner Düzeni */
 .navbar-container {
   display: flex;
   align-items: center;
@@ -33,6 +37,7 @@
   justify-content: space-between;
 }
 
+/* Logo Bölmesi */
 .logopart {
   display: flex;
   justify-content: flex-start;
@@ -85,11 +90,10 @@
   font-size: 18px;
 }
 
-.sidebar ul li a :hover{
+.sidebar ul li a:hover {
   color: #ddc3a0;
 }
 
-/* Navbar Links */
 .navbar-links {
   list-style: none;
   display: flex;
@@ -98,52 +102,49 @@
 }
 
 .navbar-links a {
+  position: relative;
+  padding: 10px 15px;
   text-decoration: none;
-  text-align: center;
-  display: flex;
-  padding: 1vh 1vh;
-  border-radius: 0.5vh;
-  color: black;
-  font-size: 1rem;
+  color: #000;
+  transition: all 0.3s ease;
 }
 
-.navbar-links a:hover {
-  background-size: cover;
-  background-color: #ddc3a0;
-}
-
-.navbar-links.active {
-  display: flex;
-  flex-direction: column;
+.navbar-links a::before {
+  content: "";
   position: absolute;
-  top: 100%;
-  right: 2vh;
-  background: #ddc3a0;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 0.5vh;
-  padding: 1vh 2vh;
-  z-index: 200;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ddc3a0;
+  z-index: -1;
+  transition: width 0.3s ease;
 }
 
-/* Masaüstü için navbar */
+.navbar-links a:hover::before {
+  width: 100%; 
+}
+
+
 @media (min-width: 800px) {
   .menu-toggle {
-    display: none; /* Hamburger menü masaüstünde gizleniyor */
+    display: none; 
   }
 
   .sidebar {
-    display: none; /* Sidebar masaüstünde gizleniyor */
+    display: none; 
   }
 
   .navbar-links {
-    display: flex;  /* Masaüstünde navbar linkleri görünür */
+    display: flex; 
   }
 
   .navbar-links li {
-    margin-right: 2vh;  /* Linkler arasına mesafe ekliyoruz */
+    margin-right: 2vh; /* Linkler arasına mesafe ekliyoruz */
   }
 }
 
+/* Mobil için navbar */
 @media (max-width: 800px) {
   .navbar-links {
     display: none; /* Navbar linkleri mobilde gizli */
