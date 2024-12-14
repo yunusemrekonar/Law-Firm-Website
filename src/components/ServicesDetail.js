@@ -37,7 +37,7 @@ const ServicesDetail = () => {
             <meta name="author" content="Avukat Ayşenur Konar" />
           </Helmet>
     
-    <div id='ankara-avukat-çalisma-alanlari' className='service-detailed-container'>
+    <div id='ankara-avukat-calisma-alanlari' className='service-detailed-container'>
       <h2>Çalışma Alanlarımız</h2>
       {servicesdetailed.map((service, index) => (
         <CustomCard

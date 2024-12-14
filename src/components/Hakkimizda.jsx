@@ -52,8 +52,8 @@ const AboutusDetail = () => {
         <meta name="author" content="Avukat Ayşenur Konar" />
       </Helmet>
 
-      <section id="ankara-avukat-hakkimizda">
-        <div className="content">
+      <section >
+        <div id='ankara-avukat-hakkimizda' className="content">
           <div ref={teamSectionRef} className="teamSection">
             <h2 className="founder-title">Kurucumuz</h2>
             <div className="teamMember">

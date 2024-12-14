@@ -50,13 +50,13 @@ const Navbar = () => {
                 <Link to="/ankara-avukat-hakkimizda" onClick={() => { closeMenu(); scrollToTop(); }}>Hakkımızda</Link>
               </li>
               <li>
-                <Link to="/ankara-avukat-çalisma-alanlari" onClick={() => { closeMenu(); scrollToTop(); }}>Çalışma Alanlarımız</Link>
+                <Link to="/ankara-avukat-calisma-alanlari" onClick={() => { closeMenu(); scrollToTop(); }}>Çalışma Alanlarımız</Link>
               </li>
               <li>
-                <Link to="/ankara-avukat-tüm-makaleler" onClick={() => { closeMenu(); scrollToTop(); }}>Makaleler</Link>
+                <Link to="/ankara-avukat-tum-makaleler" onClick={() => { closeMenu(); scrollToTop(); }}>Makaleler</Link>
               </li>
               <li>
-                <Link to="/ankara-avukat-iletişim-bilgileri" onClick={() => { closeMenu(); scrollToTop(); }}>İletişim</Link>
+                <Link to="/ankara-avukat-iletisim-bilgileri" onClick={() => { closeMenu(); scrollToTop(); }}>İletişim</Link>
               </li>
             </ul>
           </div>
@@ -69,13 +69,13 @@ const Navbar = () => {
               <Link to="/ankara-avukat-hakkimizda" onClick={() => { closeMenu(); scrollToTop(); }}>Hakkımızda</Link>
             </li>
             <li>
-              <Link to="/ankara-avukat-çalisma-alanlari" onClick={() => { closeMenu(); scrollToTop(); }}>Çalışma Alanlarımız</Link>
+              <Link to="/ankara-avukat-calisma-alanlari" onClick={() => { closeMenu(); scrollToTop(); }}>Çalışma Alanlarımız</Link>
             </li>
             <li>
-              <Link to="/ankara-avukat-tüm-makaleler" onClick={() => { closeMenu(); scrollToTop(); }}>Makaleler</Link>
+              <Link to="/ankara-avukat-tum-makaleler" onClick={() => { closeMenu(); scrollToTop(); }}>Makaleler</Link>
             </li>
             <li>
-              <Link to="/ankara-avukat-iletişim-bilgileri" onClick={() => { closeMenu(); scrollToTop(); }}>İletişim</Link>
+              <Link to="/ankara-avukat-iletisim-bilgileri" onClick={() => { closeMenu(); scrollToTop(); }}>İletişim</Link>
             </li>
           </ul>
         </div>
