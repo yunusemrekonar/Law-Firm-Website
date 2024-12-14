@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import './BlogDetail.css';
 
-const blogData = [
+const blogData =  [
   {
     "id": 1,
     "title": "Aile Hukuku",
@@ -160,9 +161,6 @@ const blogData = [
     }
   ]
 ];
-  
-
-
 export default function BlogDetail() {
   const { id } = useParams();
   const blog = blogData.find(b => b.id === parseInt(id));
@@ -172,7 +170,6 @@ export default function BlogDetail() {
 
   useEffect(() => {
     if (blog) {
-      // Başlıkları topla
       const headingTags = [];
       const contentContainer = ref.current;
       const headingsList = contentContainer.querySelectorAll('h3, h4');
@@ -193,6 +190,13 @@ export default function BlogDetail() {
 
   return (
     <div className="blog-detail-container">
+      <Helmet>
+        <title>{blog.title} - Blog</title>
+        <meta name="description" content={`Detaylı bilgi için ${blog.title} sayfasını ziyaret edin.`} />
+        <meta name="keywords" content="Aile Hukuku, Miras Hukuku, Ceza Hukuku, Hukuk, Boşanma, Çocuk Hakları" />
+        <meta name="author" content="Av.Ayşenur Konar" />
+      </Helmet>
+
       <h2 className="blog-detail-title">{blog.title}</h2>
 
       <div className="blog-detail-card">
@@ -203,10 +207,9 @@ export default function BlogDetail() {
         />
       </div>
 
-      {/* Table of Contents */}
       {headings.length > 0 && (
         <div className="table-of-contents">
-            <h5>İçindekiler</h5>
+          <h5>İçindekiler</h5>
           <ul>
             {headings.map((heading, index) => (
               <li key={index}>

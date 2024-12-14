@@ -48,7 +48,7 @@ const AboutusDetail = () => {
       <Helmet>
         <title>Hakkimizda - Ankara Avukat</title>
         <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
-        <meta name="keywords" content="Ankara, avukat, danismanlik, hukuk, müvekkil memnuniyeti, Ankara avukat, Çankaya avukat" />
+        <meta name="keywords" content="Ankara, boşanma avukati ankara, ceza avukati ankara, avukat, danismanlik, hukuk, müvekkil memnuniyeti, Ankara avukat, Çankaya avukat" />
         <meta name="author" content="Avukat Ayşenur Konar" />
       </Helmet>
 
