@@ -5,14 +5,14 @@ import Home from './components/Home';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Aboutus from './components/Aboutus';
-import Services from './components/Services';  
+import Services from './components/Services';
 import Hakkimizda from './components/Hakkimizda';
-import ServicesDetail from './components/ServicesDetail'; 
+import ServicesDetail from './components/ServicesDetail';
 import Blogs from './components/Blogs';
-import BlogDetail from './components/BlogDetail'; 
+import BlogDetail from './components/BlogDetail';
 import Makaleler from './components/Makaleler';
 import Iletisim from './components/Iletisim';
-import { Helmet } from "react-helmet";   
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -28,8 +28,8 @@ const App = () => {
 
         <Navbar />
         <Routes>
-          <Route 
-            path="/" 
+          <Route
+            path="/"
             element={
               <>
                 <Home />
@@ -38,33 +38,14 @@ const App = () => {
                 <Blogs />
                 <Contact />
               </>
-            } 
+            }
           />
-          <Route
-            path='ankara-avukat-hakkimizda'
-            element={<Hakkimizda />}
-          />
-          <Route 
-            path="ankara-avukat-çalisma-alanlari" 
-            element={<ServicesDetail />} 
-          />
-          <Route 
-            path="ankara-avukat-tüm-makaleler" 
-            element={<Makaleler />} 
-          />
-          <Route 
-            path="ankara-avukat-iletişim-bilgileri" 
-            element={<Iletisim />} 
-          />
-          <Route 
-          path="/" 
-          element={<Blogs />} 
-          />
-          <Route 
-          path="/blog/:id" 
-          element={<BlogDetail />} 
-          />
-          
+          <Route path="/ankara-avukat-hakkimizda" element={<Hakkimizda />} />
+          <Route path="/ankara-avukat-çalisma-alanlari" element={<ServicesDetail />} />
+          <Route path="/ankara-avukat-tüm-makaleler" element={<Makaleler />} />
+          <Route path="/ankara-avukat-iletisim-bilgileri" element={<Iletisim />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
