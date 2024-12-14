@@ -12,6 +12,7 @@ import Blogs from './components/Blogs';
 import BlogDetail from './components/BlogDetail';
 import Makaleler from './components/Makaleler';
 import Iletisim from './components/Iletisim';
+import NotFound from './components/Notfound';
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
