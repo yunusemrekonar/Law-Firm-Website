@@ -25,7 +25,7 @@ const blogData = [
 
 export default function Makaleler() {
   return (
-    <div id='ankara-avukat-tüm-makaleler' className="makaleler-container">
+    <div id='ankara-avukat-tum-makaleler' className="makaleler-container">
       <Helmet>
         <title>Tüm Makaleler | Hukuk Blogu</title>
         <meta name="description" content="Hukuk alaninda bilgi veren kapsamli makaleler. Aile hukuku, ceza hukuku, iş hukuku ve daha fazlasini keşfedin." />
