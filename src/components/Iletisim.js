@@ -7,10 +7,7 @@ import { Helmet } from 'react-helmet';
 
 const Iletisim = () => {
   return (
-    <div id='ankara-avukat-iletişim-bilgileri'>
-
-    
-   
+    <div id='ankara-avukat-iletisim-bilgileri'>
     <>  
           <Helmet>
             <title>İletişim - Ankara Avukat</title>
