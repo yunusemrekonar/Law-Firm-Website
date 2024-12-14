@@ -48,7 +48,7 @@ const Aboutus = () => {
 <>
   <Helmet>
     <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
-    <meta name="keywords" content="Ankara, avukat, danismanlik, hukuk, müvekkil memnuniyeti, ankara, çankaya" />
+    <meta name="keywords" content="Ankara, avukat, Bosanma avukati,danismanlik, hukuk, Avukat Aysenur Konar, müvekkil memnuniyeti, ankara, çankaya" />
     <meta name="author" content="Avukat Ayşenur Konar" />
   </Helmet>
 
@@ -58,15 +58,15 @@ const Aboutus = () => {
           <h2 className="founder-title">Kurucumuz</h2>
           <div className="team-member">
             <img src={team1} alt="Avukat Ayşenur Konar" />
-            <h3>Av. Ayşenur Konar</h3>
-            <p>Ankara Barosu - 37181</p>
+            <h3 className='team-member-name-home'>Av. Ayşenur Konar</h3>
+            <p className='team-member-no-home'>Ankara Barosu - 37181</p>
           </div>
         </div>
 
     
         <div ref={aboutTextRef} className="about-text">
           <h2>Hakkımızda</h2>
-          <p>
+          <p className='about-text-home-p'>
           Biz, Ankara'da avukatlık ve danışmanlık hizmeti veren, kaliteli hizmet ve müvekkil memnuniyetini en ön planda tutan, müvekkil odaklı bir hukuk bürosuyuz. Yılların getirdiği tecrübe ve bilgi birikimiyle, her zaman en iyi çözümleri sunmak için titizlikle çalışıyoruz. Ankara'daki avukatlık ve danışmanlık ihtiyaçlarınızı en iyi şekilde anlayarak, size yenilikçi, etkili ve sürdürülebilir hizmetler sağlıyoruz. Her bir müvekkilimizin özel gereksinimlerine yönelik çözümler geliştirmeye özen gösteriyor, onların beklentilerini aşmayı amaçlıyoruz. Takımımız, her zaman yüksek kalite standartlarına sadık kalarak, Ankara'da sektördeki lider konumumuzu korumak ve daha da güçlendirmek için sürekli olarak kendini geliştiriyor. Amacımız, Ankara'da sektördeki en güvenilir ve saygın hukuk bürosu haline gelmek, müvekkil memnuniyetini sürekli olarak artırarak uzun vadeli iş ilişkileri kurmaktır. Her projede mükemmeliyetin peşinden gidiyor ve Ankara'daki müvekkillerimize değer katmayı hedefliyoruz. Bu hedefe ulaşabilmek için, müvekkil geri bildirimlerine büyük önem veriyor, her bir görüş ve öneriyi iş süreçlerimizi iyileştirmek için bir fırsat olarak değerlendiriyoruz. Müvekkillerimizin taleplerine hızlı ve etkin çözümler üreterek, onların zamanına ve kaynaklarına değer katıyoruz. Bizim için her müvekkil, yalnızca bir iş ilişkisi değil, aynı zamanda uzun süreli bir ortaklıktır. Bu nedenle, her projede yalnızca sonuç odaklı değil, aynı zamanda sürecin her aşamasında kaliteli bir deneyim sunmayı hedefliyoruz. Sürekli gelişim ve inovasyon kültürümüz, bizi Ankara'da sektördeki en güvenilir ve saygın hukuk bürosu olma yolunda ileriye taşıyor. Bu değerlerimizle, müvekkil odaklı çalışma prensiplerimizi daha da güçlendirerek, sektördeki liderliğimizi pekiştirmeyi sürdüreceğiz.
           </p>
         </div>

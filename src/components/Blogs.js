@@ -18,7 +18,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: '10px',
   overflow: 'hidden',
   margin: '0.5vh',
-  '&:hover': {
+  '&:hover': { 
     boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)',
   },
   [theme.breakpoints.down('md')]: {
@@ -84,7 +84,7 @@ export default function MultiActionAreaCard() {
           borderBottom: '2px solid #e0a96d',
           fontFamily: 'Roboto, sans-serif',
           padding: '10px 20px',
-          fontSize: '3vh',
+          fontSize: '3.2vh',
           width: '100%',
           textAlign: 'center',
         }}

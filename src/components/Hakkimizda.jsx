@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import team1 from '../assets/team1.jpg';
 import { Helmet } from 'react-helmet';
-import './Hakkimizda.css';  // Yeni CSS dosyasını içeri aktar
+import './Hakkimizda.css';  
 
 const AboutusDetail = () => {
 
@@ -58,7 +58,7 @@ const AboutusDetail = () => {
             <h2 className="founder-title">Kurucumuz</h2>
             <div className="teamMember">
               <img src={team1} alt="Avukat Ayşenur Konar" />
-              <h3>Av. Ayşenur Konar</h3>
+              <h3 className='team-member-pg-name'>Av. Ayşenur Konar</h3>
               <p>Ankara Barosu - 37181</p>
             </div>
           </div>

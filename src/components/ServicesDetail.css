@@ -20,6 +20,7 @@ body {
 }
 
 .service-detailed-container h2 {
+  color: black;
   width: 100%;
   text-align: center;
   font-size: 4vh;
@@ -28,15 +29,15 @@ body {
   padding-bottom: 1vh;
 }
 
-/* Kart düzeni */
+
 .custom-card {
-  width: calc(25% - 20px); /* Masaüstü için 4 kart */
-  background-color: #fff;
+  width: calc(25% - 20px); 
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
   margin-bottom: 2vh;
+  background-color: transparent !important;
 }
 
 .custom-card:hover {
@@ -49,35 +50,40 @@ body {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  background-color: transparent;
 }
 
 .custom-card h3 {
   font-size: 1.2rem;
+  border-radius: 8px;
   font-weight: bold;
   color: black;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  background-color: transparent;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
 }
 
-/* Mobil için responsive ayarlar */
+
 @media (max-width: 1200px) {
   .custom-card {
-    width: calc(33.33% - 20px); /* Tablet için 3 kart */
+    width: calc(33.33% - 20px); 
   }
 }
 
 @media (max-width: 800px) {
   .custom-card {
-    width: calc(50% - 20px); /* Küçük tablet veya geniş mobil için 2 kart */
+    width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 500px) {
   .custom-card {
-    width: 100%; /* Mobil cihazlar için tekli kart */
+    width: 100%; 
   }
 
   .service-detailed-container h2 {
-    font-size: 5vh; /* Başlık font boyutunu küçült */
+    font-size: 5vh; 
   }
 }

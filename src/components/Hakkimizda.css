@@ -1,6 +1,3 @@
-/* Hakkimizda.css */
-
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +5,6 @@
     font-family: 'Arial', sans-serif;
   }
   
-  /* Body and Section Styles */
   body {
     background-color: #ecf0f1;
     color: #333;
@@ -28,7 +24,6 @@
     gap: 60px;
   }
   
-  /* Team Section */
   .teamSection {
     opacity: 0;
     transform: translateY(50px);
@@ -58,7 +53,9 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+  .team-member-pg-name{
+    background-color: transparent;
+  }
   .teamMember:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -84,7 +81,6 @@
     font-style: italic;
   }
   
-  /* About Text Section */
   .aboutText {
     opacity: 0;
     transform: translateY(50px);
@@ -111,14 +107,12 @@
     margin-bottom: 20px;
   }
   
-  /* Background Color for Sections */
   #ankara-avukat-hakkimizda {
     background-color: #f1f1f1;
     padding: 60px 20px;
     border-radius: 10px;
   }
   
-  /* Add a Background Image for the Entire Page */
   #ankara-avukat-hakkimizda::before {
     content: '';
     position: absolute;
@@ -130,17 +124,14 @@
     opacity: 0.1;
   }
   
-  /* Custom Styling for Helmet */
   meta {
     font-size: 1rem;
   }
   
-  /* Transition Effect for the elements */
   .teamSection, .aboutText {
     transition: all 1s ease-out;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .content {
       padding: 20px;
@@ -173,7 +164,6 @@
     }
   }
   
-  /* Styling for headings and subheadings */
   h2, h3 {
     color: #2c3e50;
   }

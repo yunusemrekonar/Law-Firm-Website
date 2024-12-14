@@ -13,34 +13,21 @@ import BlogDetail from './components/BlogDetail';
 import Makaleler from './components/Makaleler';
 import Iletisim from './components/Iletisim';
 import { Helmet } from "react-helmet";   
-import './components/whatsapp.css'; 
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <div className="App">
-
-        <FloatingWhatsApp
-          phoneNumber="+90 506 835 18 93" 
-          chatMessage="Merhaba, size nasıl yardımcı olabiliriz?" 
-          accountName="Konar Hukuk & Danışmanlık" 
-          placeholder="Lütfen mesajınızı iletiniz"
-          statusMessage="Aktif"
-          allowClickAway
-          notification
-        />
-
-
+      <div>
+        {/* SEO için Helmet */}
         <Helmet>
           <meta name="description" content="Ankara Konar Hukuk ve Danışmanlık olarak, hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlası için bize başvurun." />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Ankara Konar Hukuk & Danışmanlık</title>
         </Helmet>
 
-
-        <Navbar /> 
+        {/* Navbar ve Sayfa Yönlendirmeleri */}
+        <Navbar />
         <Routes>
           <Route 
             path="/" 
@@ -56,27 +43,31 @@ function App() {
           />
           <Route
             path='ankara-avukat-hakkimizda'
-            element={<Hakkimizda/>}
+            element={<Hakkimizda />}
           />
           <Route 
             path="ankara-avukat-çalisma-alanlari" 
-            element={<ServicesDetail />}
+            element={<ServicesDetail />} 
           />
           <Route 
             path="ankara-avukat-tüm-makaleler" 
-            element={<Makaleler />}
+            element={<Makaleler />} 
           />
           <Route 
             path="ankara-avukat-iletişim-bilgileri" 
-            element={<Iletisim />}
+            element={<Iletisim />} 
           />
           <Route 
-            path="/blogs/:id" 
-            element={<BlogDetail />}
+          path="/" 
+          element={<Blogs />} 
           />
+          <Route 
+          path="/blog/:id" 
+          element={<BlogDetail />} 
+          />
+          
         </Routes>
         <Footer />
-
       </div>
     </Router>
   );
