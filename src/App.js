@@ -18,7 +18,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <Helmet>
           <meta name="description" content="Ankara Konar Hukuk ve Danismanlik olarak, hukuki danismanlik ve avukatlik hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlasi için bize başvurun." />
