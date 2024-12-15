@@ -18,7 +18,6 @@
   align-items: flex-start;
   justify-content: space-between;
   text-align: justify;
-  font-size: 15vh;
 }
 
 .team-section, .about-text {
@@ -80,7 +79,7 @@
 }
 
 .team-member-no-home {
-  font-size: 1.7vh;
+  font-size: 1.8vh;
   color: #666;
 }
 
@@ -93,7 +92,7 @@
 
 }
 
-.about-text h2 {
+.about-text-home{
   text-align: center;
   border-bottom: 2px solid #e0a96d;
   margin-bottom: 2vh;
@@ -105,7 +104,7 @@
 .about-text-home-p{
   font-size: 2.27vh;
   color: black;
-  line-height: 1.6;
+  line-height: 1.62;
   margin-bottom: 1.8vh;
 }
 
@@ -114,53 +113,6 @@
   transform: scale(1);
 }
 
-@media (max-width: 1024px) {
-  .aboutus-content {
-    flex-direction: column;
-    gap: 2vh;
-  }
-
-  .team-section, .about-text {
-    width: 100%;
-    padding: 1.5vh;
-  }
-
-  .team-member img {
-    height: 100%;
-    margin-bottom: 1vh;
-  }
-
-  .team-member h3 {
-    font-size: 1.8vh;
-  }
-
-  .team-member p {
-    font-size: 1.2vh;
-  }
-
-  .founder-title {
-    font-size: 3vh;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-bottom: 2vh;
-    font-family: 'Roboto', sans-serif;
-    border-bottom: 2px solid #e0a96d;
-    padding-bottom: 0.5vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 1vh;
-  }
-
-  .about-text h2 {
-    font-size: 2vh;
-  }
-
-  .about-text p {
-    font-size: 1.4vh;
-  }
-}
 
 @media (max-width: 768px) {
   .aboutus {
@@ -216,12 +168,12 @@
     margin-bottom: -1vh;
   }
 
-  .team-member h3 {
-    font-size: 1.8vh;
+  .team-member-name-home {
+    font-size: 1.5vh;
   }
 
-  .team-member p {
-    font-size: 1.5vh;
+  .team-member-no-home {
+    font-size: 1.2vh;
   }
 
   .about-text {
@@ -230,12 +182,12 @@
     opacity: 1;
   }
 
-  .about-text h2 {
+  .about-text-home {
     font-size: 2vh;
     margin-top: 1vh;
   }
 
-  .about-text p {
+  .about-text-home-p {
     margin-top: -1vh;
     font-size: 1.3vh;
   }
@@ -295,11 +247,11 @@
     margin-bottom: -1vh;
   }
 
-  .team-member h3 {
-    font-size: 3vh;
+  .team-member-name-home {
+    font-size: 2.5vh;
   }
 
-  .team-member p {
+  .team-member-no-home {
     font-size: 1.8vh;
   }
 
@@ -309,12 +261,12 @@
     opacity: 1;
   }
 
-  .about-text h2 {
+  .about-text-home {
     font-size: 3vh;
     margin-top: 1vh;
   }
 
-  .about-text p {
+  .about-text-home-p {
     font-size: 1.8vh;
   }
 }

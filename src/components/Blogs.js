@@ -30,7 +30,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
 }));
 
 const StyledMedia = styled(CardMedia)({
-  height: '30vh',
+  height: '28vh',
   objectFit: 'cover',
 });
 
@@ -44,7 +44,7 @@ const StyledButton = styled(Button)({
 
 const blogData = [
   { id: 1, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
-  { id: 2, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 2, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile ve Boşanma Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
   { id: 3, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş ve İşçi Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
   { id: 4, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
 ];

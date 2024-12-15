@@ -116,19 +116,23 @@
 
 @media screen and (max-width: 480px) {
     .makaleler-card {
+        min-width: 20vh;
         flex: 1 1 100%;
         height: auto;
     }
 
     .makaleler-media {
-        height: 12vh;
+        height: 25vh;
     }
 
     .makaleler-header {
-        font-size: 1.8vh;
+        font-size: 3vh;
     }
 
     .makaleler-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
         padding: 1vh;
     }
 }

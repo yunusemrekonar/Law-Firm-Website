@@ -43,7 +43,7 @@ const Contact = () => {
 
      
       <div className="google-maps">
-        <h2>Konumumuz</h2>
+        <h2 className='google-maps-h2'>Konumumuz</h2>
         <iframe 
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.012580186715!2d32.85534687580137!3d39.91873467152397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d255cc80c59e2bd%3A0x8b3c2809e4f15a9a!2sKonar%20Hukuk%20%26%20Dan%C4%B1%C5%9Fmanl%C4%B1k%20%7C%20Ankara%20Avukatl%C4%B1k%20Hizmetleri!5e0!3m2!1str!2sde!4v1733932024465!5m2!1str!2sde" 
   width="600" 
