@@ -159,15 +159,18 @@
 
 @media (max-width: 768px) {
   .contact .contact-info p{
-    font-size: 1.8vh;
+    font-size: 2.2vh;
+  }
+  .contact .contact-info h2{
+    font-size: 3vh;
   }
   .contact .contact-info p svg {
     margin-right: 0.7vh;    
-    font-size: 2.2vh;       
+    font-size: 2.5vh;       
   }
   
   .google-maps h2{
-    font-size: 3vh;
+    font-size: 3.5vh;
   }
   .contact .contact-logopart img {
     width: 20vh; 
@@ -194,18 +197,16 @@
     min-width: 0; 
     font-size: 1rem;
   }
-  .contact .contact-info h2{
-  font-size: 2vh;
-  }
-  .contact .contact-info p{
-    font-size: 1.3rem;
-  }
+ 
   .contact .google-maps iframe {
     height: 30vh; 
   }
+  .google-maps h2{
+    font-size: 3vh;
+  }
 
   .contact .contact-form h2{
-    font-size: 2vh;
+    font-size: 3vh;
 
   }
   .contact .contact-form input{
