@@ -18,7 +18,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
         <Helmet>
           <meta name="description" content="Ankara Konar Hukuk ve Danismanlik olarak, hukuki danismanlik ve avukatlik hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlasi için bize başvurun." />
           <meta name="keywords" content=" Ankara avukat, Ankara boşanma avukati, ceza hukuku avukati ankara, aile hukuku avukati ankara, iş hukuku avukati ankara, ticaret hukuku avukati ankara, icra ve iflas hukuku avukati ankara, gayrimenkul hukuku avukati ankara, vergi hukuku avukati ankara, miras hukuku avukati ankara, saglik hukuku avukati ankara, fikri mülkiyet hukuku avukati ankara, uluslararasi hukuk avukati ankara, avukatlik hizmetleri avukati ankara" />
@@ -50,7 +50,7 @@ const App = () => {
         </Routes>
         <Footer />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
