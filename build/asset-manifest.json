@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1b53df28.css",
+    "main.js": "/static/js/main.1e936f5a.js",
+    "static/media/law-background2.png": "/static/media/law-background2.d149531833ff7261b09f.png",
+    "static/media/mobil-background.png": "/static/media/mobil-background.2f1ce9b3482f616c6b42.png",
+    "static/media/team1.jpg": "/static/media/team1.d84824e162fc026a5b0d.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.1b53df28.css.map": "/static/css/main.1b53df28.css.map",
+    "main.1e936f5a.js.map": "/static/js/main.1e936f5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b53df28.css",
+    "static/js/main.1e936f5a.js"
+  ]
+}
