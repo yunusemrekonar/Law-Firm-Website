@@ -43,10 +43,10 @@ const StyledButton = styled(Button)({
 });
 
 const blogData = [
-  { id: 1, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile hukuku ile ilgili temel bilgiler." },
-  { id: 2, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza hukuku ve dava süreçleri hakkında detaylar." },
-  { id: 3, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret hukuku ve şirket yönetimi." },
-  { id: 4, title: "Miras Hukuku", image: "/images/miras_hukuku.jpg", description: "Miras hukuku ve haklar." },
+  { id: 1, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 2, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 3, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş ve İşçi Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 4, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
 ];
 
 export default function MultiActionAreaCard() {
