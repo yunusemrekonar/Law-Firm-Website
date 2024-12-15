@@ -117,7 +117,7 @@ export default function MultiActionAreaCard() {
               </StyledButton>
             </Link>
 
-            <Link to="/ankara-avukat-tüm-makaleler" style={{ textDecoration: 'none', marginLeft: 'auto' }}>
+            <Link to="/ankara-avukat-tum-makaleler" style={{ textDecoration: 'none', marginLeft: 'auto' }}>
               <button
                 id="ankara-avukat-makalelere"
                 style={{
