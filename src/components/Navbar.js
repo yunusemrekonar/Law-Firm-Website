@@ -34,7 +34,9 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-logopart">
+            <Link to={"/"}>
             <img src={logo} alt="Logo" className="navbar-logo" />
+            </Link>
           </div>
 
           <button className="menu-toggle" onClick={toggleMenu}>
