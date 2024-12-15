@@ -8,6 +8,7 @@ import Aboutus from './components/Aboutus';
 import Services from './components/Services';
 import Hakkimizda from './components/Hakkimizda';
 import ServicesDetail from './components/ServicesDetail';
+import ScrollToTop from './components/ScrollToTop';
 import Blogs from './components/Blogs';
 import BlogDetail from './components/BlogDetail';
 import Makaleler from './components/Makaleler';
@@ -19,6 +20,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <Router>
+      <ScrollToTop/>
         <Helmet>
           <meta name="description" content="Ankara Konar Hukuk ve Danismanlik olarak, hukuki danismanlik ve avukatlik hizmetleri sunuyoruz. Aile hukuku, ceza hukuku ve daha fazlasi için bize başvurun." />
           <meta name="keywords" content=" Ankara avukat, Ankara boşanma avukati, ceza hukuku avukati ankara, aile hukuku avukati ankara, iş hukuku avukati ankara, ticaret hukuku avukati ankara, icra ve iflas hukuku avukati ankara, gayrimenkul hukuku avukati ankara, vergi hukuku avukati ankara, miras hukuku avukati ankara, saglik hukuku avukati ankara, fikri mülkiyet hukuku avukati ankara, uluslararasi hukuk avukati ankara, avukatlik hizmetleri avukati ankara" />
