@@ -84,7 +84,7 @@ export default function MultiActionAreaCard() {
           borderBottom: '2px solid #e0a96d',
           fontFamily: 'Roboto, sans-serif',
           padding: '10px 20px',
-          fontSize: '3.2vh',
+          fontSize: '3vh',
           width: '100%',
           textAlign: 'center',
         }}

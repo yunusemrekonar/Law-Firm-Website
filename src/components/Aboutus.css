@@ -264,7 +264,7 @@
   }
 
   .founder-title {
-    font-size: 2vh;
+    font-size: 3vh;
     font-weight: bold;
     color: #333;
     text-align: center;
@@ -296,27 +296,25 @@
   }
 
   .team-member h3 {
-    font-size: 1.8vh;
+    font-size: 3vh;
   }
 
   .team-member p {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 
   .about-text {
-    padding: vh;
     width: 100%;
     height: auto;
     opacity: 1;
   }
 
   .about-text h2 {
-    font-size: 2vh;
+    font-size: 3vh;
     margin-top: 1vh;
   }
 
   .about-text p {
-    margin-top: -1vh;
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
 }
