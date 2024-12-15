@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './BlogDetail.css';
@@ -468,7 +469,7 @@ export default function BlogDetail() {
           <ul>
             {headings.map((heading, index) => (
               <li key={index}>
-                <a href={`#${heading.id}`}>{heading.text}</a>
+                <Link to={`#${heading.id}`}>{heading.text}</Link> 
               </li>
             ))}
           </ul>

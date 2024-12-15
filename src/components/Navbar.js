@@ -34,7 +34,6 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-logopart">
-            {/* Wrap the logo in a Link to make it clickable */}
             <Link to="/" onClick={() => { scrollToTop(); }}>
               <img src={logo} alt="Logo" className="navbar-logo" />
             </Link>
