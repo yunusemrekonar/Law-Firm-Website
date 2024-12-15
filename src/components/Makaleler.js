@@ -11,16 +11,14 @@ import { Helmet } from 'react-helmet';
 import './Makaleler.css';
 
 const blogData = [
-  { id: 1, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile hukuku ile ilgili temel bilgiler." },
-  { id: 2, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza hukuku ve dava süreçleri hakkında detaylar." },
-  { id: 3, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret hukuku ve şirket yönetimi." },
-  { id: 4, title: "Miras Hukuku", image: "/images/miras_hukuku.jpg", description: "Miras hukuku ve haklar." },
-  { id: 5, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş hukuku ile ilgili detaylar." },
-  { id: 6, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile hukuku ile ilgili temel bilgiler." },
-  { id: 7, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza hukuku ve dava süreçleri hakkında detaylar." },
-  { id: 8, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret hukuku ve şirket yönetimi." },
-  { id: 9, title: "Miras Hukuku", image: "/images/miras_hukuku.jpg", description: "Miras hukuku ve haklar." },
-  { id: 10, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş hukuku ile ilgili detaylar." },
+  { id: 1, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 2, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 3, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 4, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 5, title: "İcra ve İflas Hukuk", image: "/images/icra_iflas_hukuku.jpg", description: "İcra ve İflas Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 6, title: "Gayrimenkul Hukuku", image: "/images/gayrimenkul_hukuku.jpg", description: "Gayrimenkul Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 7, title: "Tüketici Hukuku", image: "/images/tuketici_hukuku.jpg", description: "Tüketici Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 8, title: "Miras Hukuk", image: "/images/miras_hukuku.jpg", description: "Miras Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
 ];
 
 export default function Makaleler() {
