@@ -43,7 +43,7 @@ const App = () => {
           />
           <Route path="/ankara-avukat-hakkimizda" element={<Hakkimizda />} />
           <Route path="/ankara-avukat-calisma-alanlari" element={<ServicesDetail />} />
-          <Route path="/ankara-avukat-tüm-makaleler" element={<Makaleler />} />
+          <Route path="/ankara-avukat-tum-makaleler" element={<Makaleler />} />
           <Route path="/ankara-avukat-iletisim-bilgileri" element={<Iletisim />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="*" element={<NotFound />} />
