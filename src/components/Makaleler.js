@@ -13,7 +13,7 @@ import './Makaleler.css';
 const blogData = [
   { id: 1, title: "Ceza Hukuku", image: "/images/ceza_hukuku.jpg", description: "Ceza Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
   { id: 2, title: "Aile Hukuku", image: "/images/aile_hukuku.jpg", description: "Aile Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
-  { id: 3, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
+  { id: 3, title: "İş Hukuku", image: "/images/is_hukuku.jpg", description: "İş ve İşçi Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
   { id: 4, title: "Ticaret Hukuku", image: "/images/ticaret_hukuku.jpg", description: "Ticaret Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
   { id: 5, title: "İcra ve İflas Hukuk", image: "/images/icra_iflas_hukuku.jpg", description: "İcra ve İflas Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
   { id: 6, title: "Gayrimenkul Hukuku", image: "/images/gayrimenkul_hukuku.jpg", description: "Gayrimenkul Hukuku: Ankara'da Bir Avukatın Perspektifinden" },
