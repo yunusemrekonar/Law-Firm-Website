@@ -159,15 +159,15 @@
 
 @media (max-width: 768px) {
   .contact .contact-info p{
-    font-size: 1.5vh;
+    font-size: 1.8vh;
   }
   .contact .contact-info p svg {
     margin-right: 0.7vh;    
-    font-size: 2vh;       
+    font-size: 2.2vh;       
   }
   
   .google-maps h2{
-    font-size: 2vh;
+    font-size: 3vh;
   }
   .contact .contact-logopart img {
     width: 20vh; 
