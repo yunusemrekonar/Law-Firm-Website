@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './BlogDetail.css';
 
-const blogData = [
+const blogData = 
+[
   {
     "id": 1,
     "title": "Ceza Hukuku",
@@ -417,6 +418,9 @@ const blogData = [
   ,
 
 ];
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' }); 
+};
 export default function BlogDetail() {
   const { id } = useParams();
   const blog = blogData.find(b => b.id === parseInt(id));
@@ -424,7 +428,10 @@ export default function BlogDetail() {
   const [headings, setHeadings] = useState([]);
   const ref = useRef(null);
 
+    scrollToTop();
+
   useEffect(() => {
+    scrollToTop();
     if (blog) {
       const headingTags = [];
       const contentContainer = ref.current;

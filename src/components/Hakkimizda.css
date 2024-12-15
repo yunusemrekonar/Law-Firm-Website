@@ -97,6 +97,8 @@
     color: black;
     border-bottom: 2px solid #e0a96d;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
   }
   
   .aboutText p {
