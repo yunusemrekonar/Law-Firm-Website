@@ -24,7 +24,7 @@ const Navbar = () => {
       <Helmet>
         <title>Ankara Avukat Çankaya | Hukuk Hizmetleri ve Danışmanlık</title>
         <meta name="description" content="Ankara'da avukatlik hizmetleri ve hukuki danismanlik. Ceza, aile, iş, ticaret, miras ve daha birçok alanda profesyonel hizmetler." />
-        <meta name="keywords" content="Ankara avukat, Çankaya avukat, ceza avukati, aile avukati, iş avukati, ticaret avukati, Ankara hukuk danismani" />
+        <meta name="keywords" content=" Ankara en iyi avukat,Ankara avukat, Çankaya avukat, ceza avukati, aile avukati, iş avukati, ticaret avukati, Ankara hukuk danismani" />
         <meta property="og:title" content="Ankara Avukat Çankaya | Hukuk Hizmetleri" />
         <meta property="og:description" content="Ankara'da profesyonel avukatlik ve hukuk danismanlik hizmetleri. Ceza, aile, iş, ticaret, miras gibi birçok alanda çözümler sunuyoruz." />
         <meta property="og:url" content="https://www.konarhukuk.com/" />

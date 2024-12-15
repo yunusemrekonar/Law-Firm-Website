@@ -33,7 +33,7 @@ const ServicesDetail = () => {
     <Helmet>
             <title>Çalışma Alanlarımız - Ankara Avukat</title>
             <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
-            <meta name="keywords" content="Ankara, avukatlik, danismanlik, hukuk, müvekkil memnuniyeti" />
+            <meta name="keywords" content=" Ankara avukatlar,Ankara avukat,Ankara bosanma avukatlari,Ankara, avukatlik, danismanlik, hukuk, müvekkil memnuniyeti" />
             <meta name="author" content="Avukat Ayşenur Konar" />
           </Helmet>
     

@@ -456,7 +456,7 @@ export default function BlogDetail() {
       <Helmet>
         <title>{blog.title} - Blog</title>
         <meta name="description" content={`Detaylı bilgi için ${blog.title} sayfasını ziyaret edin.`} />
-        <meta name="keywords" content="Aile Hukuku, Miras Hukuku, Ceza Hukuku, Hukuk, Boşanma, Çocuk Hakları" />
+        <meta name="keywords" content=" Ankara avukatları,Aile Hukuku, Miras Hukuku, Ceza Hukuku, Hukuk, Boşanma, Çocuk Hakları" />
         <meta name="author" content="Av.Ayşenur Konar" />
       </Helmet>
 

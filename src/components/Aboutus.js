@@ -48,7 +48,7 @@ const Aboutus = () => {
 <>
   <Helmet>
     <meta name="description" content="Ankara'da avukatlik ve danişmanlik hizmeti sunan hukuk büromuz hakkinda bilgi." />
-    <meta name="keywords" content="Ankara, avukat, Bosanma avukati,danismanlik, hukuk, Avukat Aysenur Konar, müvekkil memnuniyeti, ankara, çankaya" />
+    <meta name="keywords" content=" Ankara avukatlar,Ankara, avukat, Bosanma avukati,danismanlik, hukuk, Avukat Aysenur Konar, müvekkil memnuniyeti, ankara, çankaya" />
     <meta name="author" content="Avukat Ayşenur Konar" />
   </Helmet>
 

@@ -27,7 +27,7 @@ export default function Makaleler() {
       <Helmet>
         <title>Tüm Makaleler | Hukuk Blogu</title>
         <meta name="description" content="Hukuk alaninda bilgi veren kapsamli makaleler. Aile hukuku, ceza hukuku, iş hukuku ve daha fazlasini keşfedin." />
-        <meta name="keywords" content="Hukuk, Ankara avukat, Avukat, Boşanma avukati,  Aile Hukuku, Ceza Hukuku, İş Hukuku, Ticaret Hukuku, Miras Hukuku, Hukuk Blogu" />
+        <meta name="keywords" content=" Ankara bosanma avukatlari,Hukuk, Ankara avukat, Avukat, Boşanma avukati,  Aile Hukuku, Ceza Hukuku, İş Hukuku, Ticaret Hukuku, Miras Hukuku, Hukuk Blogu" />
       </Helmet>
 
       <h2 className="makaleler-header">Tüm Makaleler</h2>

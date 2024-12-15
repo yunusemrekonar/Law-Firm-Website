@@ -11,7 +11,7 @@ const Contact = () => {
 <>  
       <Helmet>
         <meta name="description" content="Konar Hukuk & Danismanlik ile iletişime geçin. Avukatlik ve danismanlik hizmetleri hakkinda bilgi ve iletişim için bize ulaşin." />
-        <meta name="keywords" content="avukat, Ankara avukat, Çankaya avukat, iletisim, hukuk, ankara danismanlik, ankara avukatlik ofisi, avukat Ayşenur Konar" />
+        <meta name="keywords" content=" Ankara en iyi avukatlari,avukat, Ankara avukat, Çankaya avukat, iletisim, hukuk, ankara danismanlik, ankara avukatlik ofisi, avukat Ayşenur Konar" />
         <meta name="author" content="Avukat Ayşenur Konar" />
       </Helmet>
 

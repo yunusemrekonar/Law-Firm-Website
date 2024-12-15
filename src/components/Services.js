@@ -27,7 +27,7 @@ const Services = () => {
     <>
     <Helmet>
         <meta name="description" content="Konar Hukuk & Danismanlik olarak, Ankara ceza avukati, Ankara aile avukati, Ankara iş avukati, Ankara ticaret avukati, Ankara icra avukati, Ankara gayrimenkul avukati ve daha birçok alanda uzmanlaşmis avukatlik hizmetleri sunuyoruz." />
-        <meta name="keywords" content="ceza hukuku avukati ankara, aile hukuku avukati ankara, iş hukuku avukati ankara, ticaret hukuku avukati ankara, icra ve iflas hukuku avukati ankara, gayrimenkul hukuku avukati ankara, vergi hukuku avukati ankara, miras hukuku avukati ankara, saglik hukuku avukati ankara, fikri mülkiyet hukuku avukati ankara, uluslararasi hukuk avukati ankara, avukatlik hizmetleri avukati ankara" />
+        <meta name="keywords" content=" Ankara bosanma avukati,ceza hukuku avukati ankara, aile hukuku avukati ankara, iş hukuku avukati ankara, ticaret hukuku avukati ankara, icra ve iflas hukuku avukati ankara, gayrimenkul hukuku avukati ankara, vergi hukuku avukati ankara, miras hukuku avukati ankara, saglik hukuku avukati ankara, fikri mülkiyet hukuku avukati ankara, uluslararasi hukuk avukati ankara, avukatlik hizmetleri avukati ankara" />
         <meta name="author" content="Avukat Ayşenur Konar" />
       </Helmet>
     <div className='service-container'>
