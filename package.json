@@ -1,6 +1,6 @@
 {
   "name": "konar-law-firm-website",
-  "homepage": "https://www.konarhukuk.com",
+  "homepage": "/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
