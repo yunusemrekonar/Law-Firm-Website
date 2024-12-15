@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: konar-law-firm-website
+    name: konarhukuk
     env: node
     buildCommand: "npm run build"
     startCommand: "serve -s build"
