@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contactus.css';
+import './Contact.css';
 import emailjs from 'emailjs-com';
 
 const Contactus = () => {
@@ -91,6 +91,7 @@ const Contactus = () => {
         <textarea
           id="message"
           name="message"
+          className='message-txt'
           value={formData.message}
           onChange={handleChange}
           required

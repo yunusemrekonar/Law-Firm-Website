@@ -5,6 +5,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import logo from "../assets/law-logo.png";
 import { Helmet } from 'react-helmet'; 
+import Contactus from './Contactus';
 
 const Contact = () => {
   return (
@@ -29,17 +30,7 @@ const Contact = () => {
       </div>
 
      
-      <div className="contact-form">
-        <h2>Bizimle İletişime Geçin</h2>
-        <form>
-          <input type="text" placeholder="Adınız" required />
-          <input type="text" placeholder="Soyadınız" required />
-          <input type="tel" placeholder="Telefon Numaranız" required />
-          <input type="email" placeholder="E-Posta" required />
-          <textarea placeholder="Mesajınız" rows="4" required></textarea>
-          <button type="submit">Gönder</button>
-        </form>
-      </div>
+      <Contactus/>
 
      
       <div className="google-maps">
