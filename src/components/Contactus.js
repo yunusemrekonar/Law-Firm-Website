@@ -28,7 +28,7 @@ const Contactus = () => {
       return;
     }
 
-    emailjs.sendForm('service_id', 'template_id', e.target, 'user_id')
+    emailjs.sendForm('service_mf5wajk', 'template_tbpsp62', e.target, '7jn56JFE8l0bcC-yq')
     .then((result) => {
       console.log(result.text);
       alert('Form başarıyla gönderildi!');
