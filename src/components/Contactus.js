@@ -29,15 +29,13 @@ const Contactus = () => {
     }
 
     emailjs.sendForm('service_mf5wajk', 'template_tbpsp62', e.target, '7jn56JFE8l0bcC-yq')
-    .then((result) => {
-      console.log(result.text);
-      alert('Form başarıyla gönderildi!');
-    }, (error) => {
-      console.log(error.text);
-      alert('Form gönderilemedi. Lütfen tekrar deneyin.');
-    });
-
-    console.log("Form submitted:", formData);
+      .then((result) => {
+        console.log(result.text);
+        alert('Form başarıyla gönderildi!');
+      }, (error) => {
+        console.log(error.text);
+        alert('Form gönderilemedi. Lütfen tekrar deneyin.');
+      });
 
     setFormData({
       name: '',
@@ -47,8 +45,6 @@ const Contactus = () => {
       message: '',
       honeypot: '' 
     });
-
-    alert('Form başarıyla gönderildi!');
   };
 
   return (
@@ -64,7 +60,6 @@ const Contactus = () => {
           onChange={handleChange}
           required
         />
-
         <label htmlFor="surname">Soyad</label>
         <input
           type="text"
@@ -74,7 +69,6 @@ const Contactus = () => {
           onChange={handleChange}
           required
         />
-
         <label htmlFor="phone">Telefon</label>
         <input
           type="tel"
@@ -84,7 +78,6 @@ const Contactus = () => {
           onChange={handleChange}
           required
         />
-
         <label htmlFor="email">E-posta</label>
         <input
           type="email"
@@ -94,7 +87,6 @@ const Contactus = () => {
           onChange={handleChange}
           required
         />
-
         <label htmlFor="message">Mesaj</label>
         <textarea
           id="message"
@@ -103,7 +95,6 @@ const Contactus = () => {
           onChange={handleChange}
           required
         ></textarea>
-
         <input
           type="text"
           name="honeypot"
@@ -111,7 +102,6 @@ const Contactus = () => {
           value={formData.honeypot}
           onChange={handleChange}
         />
-
         <button type="submit">Gönder</button>
       </form>
     </section>
