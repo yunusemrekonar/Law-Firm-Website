@@ -4,13 +4,30 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+  <url>
+    <loc>https://www.konarhukuk.com/</loc>
+    <lastmod>2024-12-19T00:42:44+00:00</lastmod>
+  </url>
 
-<url>
-  <loc>https://www.konarhukuk.com/</loc>
-  <lastmod>2024-12-19T00:42:44+00:00</lastmod>
-</url>
+  <url>
+    <loc>https://www.konarhukuk.com/ankara-avukat-hakkimizda</loc>
+    <lastmod>2024-12-19T00:42:44+00:00</lastmod>
+  </url>
 
+  <url>
+    <loc>https://www.konarhukuk.com/ankara-avukat-calisma-alanlari</loc>
+    <lastmod>2024-12-19T00:42:44+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.konarhukuk.com/ankara-avukat-tum-makaleler</loc>
+    <lastmod>2024-12-19T00:42:44+00:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.konarhukuk.com/ankara-avukat-iletisim-bilgileri</loc>
+    <lastmod>2024-12-19T00:42:44+00:00</lastmod>
+  </url>
 
 </urlset>
